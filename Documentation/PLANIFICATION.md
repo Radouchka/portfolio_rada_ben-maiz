@@ -14,7 +14,7 @@ vas etre tres charger par rapport au viseul, alors je trouve que JSON local m'ai
 Pour mon portfolio, j’aimerais utiliser Anime.js pour ajouter des animations inspirées des BD et des jeux vidéo. Par exemple, le titre pourrait apparaître avec un effet de rebond et de « pop », tandis que les éléments décoratifs comme les étoiles, les points verts et les bulles pourraient apparaître progressivement. Les cartes de projets pourraient entrer à l’écran une par une lors du défilement et légèrement s’incliner ou grossir au passage de la souris. Lorsqu’un projet est sélectionné, une petite explosion de BD rose et verte pourrait apparaître avant d’afficher ses détails. Je pourrais également ajouter un curseur vert néon animé et quelques effets de glitch sur certains titres. L’objectif serait de rendre le portfolio plus vivant et interactif, tout en conservant son style BD/graffiti et une navigation simple.
 
 
-20 - 09 - 2026
+18 - 09 - 2026
 
 ## 1. Présentation du projet
 
@@ -1969,3 +1969,6 @@ refaire une section entière plus tard.
 Le résultat final doit être suffisamment fidèle aux maquettes pour que
 l'identité visuelle soit reconnaissable immédiatement, tout en étant un
 véritable site web responsive, fonctionnel, maintenable et documenté.
+
+
+20 - 09 - 2026
