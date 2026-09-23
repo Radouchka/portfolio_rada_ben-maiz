@@ -1,0 +1,41 @@
+/* =====================================================
+   BASE
+====================================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--noir);
+    color: var(--blanc);
+    font-family: var(--police-texte);
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+section {
+    width: 100%;
+}
+
+h1,
+h2,
+p {
+    margin: 0;
+}

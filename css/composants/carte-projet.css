@@ -1,0 +1,107 @@
+/* =====================================================
+   CARTE DE PROJET
+====================================================== */
+
+.carte-projet {
+    padding: 75px 8vw;
+}
+
+.carte-projet--sombre {
+    background: var(--noir);
+}
+
+.carte-projet--violette {
+    background: var(--violet);
+}
+
+.carte-projet__label {
+    margin-bottom: 10px;
+
+    color: var(--blanc);
+
+    font-size: 7px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.carte-projet__titre {
+    margin-bottom: 25px;
+
+    font-family: var(--police-titre);
+    font-size: clamp(48px, 7vw, 85px);
+    line-height: .8;
+}
+
+.carte-projet--sombre .carte-projet__titre {
+    color: var(--vert);
+}
+
+.carte-projet--violette .carte-projet__titre {
+    color: var(--rose);
+}
+
+.carte-projet__image-principale {
+    min-height: 470px;
+}
+
+.carte-projet__galerie {
+    margin-top: 10px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.carte-projet__galerie .media {
+    min-height: 200px;
+}
+
+.carte-projet__legende {
+    padding: 6px 10px;
+
+    font-size: 6px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.carte-projet__legende--verte {
+    background: var(--vert);
+    color: var(--noir);
+}
+
+.carte-projet__legende--rose {
+    background: var(--rose);
+    color: var(--blanc);
+}
+
+.carte-projet__description {
+    max-width: 600px;
+    margin-top: 25px;
+
+    font-size: 8px;
+    line-height: 1.8;
+}
+
+.carte-projet__tags {
+    margin-top: 20px;
+
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    gap: 6px;
+}
+
+.carte-projet__tags span {
+    padding: 4px 6px;
+
+    border: 1px solid currentColor;
+
+    font-size: 6px;
+}
+
+.carte-projet--sombre .carte-projet__tags {
+    color: var(--vert);
+}
+
+.carte-projet--violette .carte-projet__tags {
+    color: var(--rose);
+}

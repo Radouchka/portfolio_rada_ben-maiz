@@ -1,0 +1,19 @@
+/* =====================================================
+   VARIABLES
+   Toutes les couleurs et polices sont regroupées ici.
+====================================================== */
+
+:root {
+    --noir: #09030a;
+    --violet: #35082b;
+    --violet-clair: #4a0b3b;
+
+    --rose: #ff009d;
+    --vert: #16ff4b;
+
+    --blanc: #fff8fc;
+    --gris: #9b929a;
+
+    --police-titre: "Permanent Marker", cursive;
+    --police-texte: "Space Mono", monospace;
+}

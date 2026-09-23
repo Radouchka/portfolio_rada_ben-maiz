@@ -1,0 +1,521 @@
+/* =====================================================
+   MISE EN PAGE GÉNÉRALE
+====================================================== */
+
+/* -------------------------
+   HERO
+-------------------------- */
+
+.hero {
+    min-height: 570px;
+    padding: 50px 8vw 40px;
+
+    position: relative;
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            #260b2e 0%,
+            #671052 48%,
+            #120613 100%
+        );
+}
+
+.hero__label {
+    color: var(--vert);
+    font-size: 8px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.hero__titre {
+    width: fit-content;
+    margin-top: 110px;
+
+    color: var(--blanc);
+    font-family: var(--police-titre);
+    font-size: clamp(80px, 14vw, 180px);
+    line-height: .75;
+    letter-spacing: -5px;
+
+    transform: rotate(-3deg);
+
+    text-shadow: 6px 5px 0 var(--rose);
+}
+
+.hero__nom {
+    margin: 30px 0 0 20px;
+
+    color: var(--vert);
+    font-family: var(--police-titre);
+    font-size: clamp(25px, 4vw, 55px);
+    line-height: .8;
+}
+
+.hero__fiche {
+    width: 110px;
+    padding: 8px;
+
+    position: absolute;
+    left: 8vw;
+    bottom: 80px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    background: var(--blanc);
+    color: var(--noir);
+
+    font-size: 5px;
+    font-weight: bold;
+
+    transform: rotate(-3deg);
+}
+
+.hero__fiche span:nth-child(2) {
+    color: var(--rose);
+}
+
+.hero__bande {
+    height: 27px;
+    padding: 5px 15px;
+
+    position: absolute;
+
+    display: grid;
+    align-items: center;
+
+    font-size: 7px;
+    font-weight: bold;
+
+    white-space: nowrap;
+}
+
+.hero__bande--verte {
+    width: 70%;
+    left: -4vw;
+    bottom: 55px;
+
+    background: var(--vert);
+    color: var(--noir);
+
+    transform: rotate(-2deg);
+}
+
+.hero__bande--violette {
+    width: 70%;
+    right: -5vw;
+    bottom: 29px;
+
+    background: #6922d2;
+    color: var(--blanc);
+
+    transform: rotate(2deg);
+}
+
+
+/* -------------------------
+   BANDEAUX
+-------------------------- */
+
+.bande-rose {
+    min-height: 24px;
+
+    display: grid;
+    align-items: center;
+
+    overflow: hidden;
+
+    background: var(--rose);
+    color: var(--noir);
+
+    font-size: 6px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    white-space: nowrap;
+}
+
+.bande-verte {
+    padding: 18px 8vw;
+
+    background: var(--vert);
+    color: var(--noir);
+
+    font-family: var(--police-titre);
+    font-size: clamp(15px, 2vw, 25px);
+    line-height: .9;
+}
+
+
+/* -------------------------
+   À PROPOS
+-------------------------- */
+
+.a-propos {
+    padding: 90px 8vw;
+    background: var(--noir);
+}
+
+.a-propos__contenu {
+    display: grid;
+    grid-template-columns: 1.4fr .7fr;
+    gap: 70px;
+    align-items: end;
+}
+
+.section-label {
+    margin-bottom: 20px;
+
+    color: var(--vert);
+
+    font-size: 8px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.a-propos__titre {
+    font-family: var(--police-titre);
+    font-size: clamp(42px, 6vw, 85px);
+    line-height: .88;
+}
+
+.a-propos__titre span {
+    color: var(--vert);
+}
+
+.a-propos__texte {
+    max-width: 400px;
+
+    font-size: 9px;
+    line-height: 1.8;
+}
+
+
+/* -------------------------
+   MISE EN AVANT
+-------------------------- */
+
+.mise-en-avant {
+    padding: 80px 8vw;
+    background: var(--violet);
+}
+
+.mise-en-avant__grille {
+    display: grid;
+    grid-template-columns: 1.2fr .8fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.media {
+    min-height: 430px;
+
+    display: grid;
+    place-items: center;
+
+    border: 1px solid var(--vert);
+
+    background:
+        linear-gradient(
+            135deg,
+            #44113a,
+            #10030f
+        );
+
+    color: rgba(255, 255, 255, .5);
+
+    font-size: 7px;
+    letter-spacing: 1px;
+}
+
+.projet-info {
+    color: var(--rose);
+    font-size: 7px;
+    font-weight: bold;
+}
+
+.mise-en-avant__titre {
+    margin: 10px 0 20px;
+
+    color: var(--vert);
+    font-family: var(--police-titre);
+    font-size: clamp(55px, 7vw, 90px);
+    line-height: .8;
+}
+
+
+/* -------------------------
+   BOUTONS
+-------------------------- */
+
+.bouton {
+    display: inline-block;
+    margin-top: 22px;
+
+    padding: 8px 12px;
+
+    border: 1px solid currentColor;
+
+    font-size: 7px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.bouton--vert {
+    color: var(--vert);
+}
+
+.bouton--rose {
+    color: var(--rose);
+}
+
+
+/* -------------------------
+   CONTACT
+-------------------------- */
+
+.contact {
+    padding: 80px 8vw;
+
+    background: var(--rose);
+    color: var(--noir);
+}
+
+.section-label--noir {
+    color: var(--noir);
+}
+
+.contact__titre {
+    font-family: var(--police-titre);
+    font-size: clamp(80px, 13vw, 165px);
+    line-height: .7;
+
+    transform: rotate(-3deg);
+}
+
+.contact__titre span {
+    color: var(--blanc);
+}
+
+.contact__boite {
+    width: min(550px, 100%);
+    margin-top: 45px;
+    padding: 20px;
+
+    display: grid;
+    gap: 10px;
+
+    background: var(--noir);
+    border: 1px solid var(--noir);
+
+    color: var(--blanc);
+
+    font-size: 8px;
+}
+
+.contact__boite a {
+    color: var(--vert);
+}
+
+
+/* -------------------------
+   FOOTER
+-------------------------- */
+
+.footer {
+    padding: 20px 8vw;
+
+    background: var(--noir);
+    border-top: 1px solid var(--vert);
+
+    color: var(--gris);
+    font-size: 6px;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+====================================================== */
+
+@media (max-width: 800px) {
+
+    .navigation {
+        grid-template-columns: 1fr auto;
+    }
+
+    .navigation__liens {
+        display: none;
+    }
+
+    .a-propos__contenu,
+    .mise-en-avant__grille {
+        grid-template-columns: 1fr;
+    }
+
+    .a-propos {
+        gap: 40px;
+    }
+
+    .media {
+        min-height: 350px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    body {
+        font-size: 9px;
+    }
+
+    .navigation {
+        min-height: 40px;
+        padding: 5px 12px;
+    }
+
+    .navigation__logo img {
+        width: 28px;
+        height: 25px;
+    }
+
+    .navigation__info {
+        font-size: 5px;
+    }
+
+
+    .hero {
+        min-height: 360px;
+        padding: 28px 16px 20px;
+    }
+
+    .hero__label {
+        font-size: 5px;
+    }
+
+    .hero__titre {
+        margin-top: 80px;
+        font-size: 20vw;
+        letter-spacing: -2px;
+    }
+
+    .hero__nom {
+        margin-top: 17px;
+        margin-left: 8px;
+        font-size: 9vw;
+    }
+
+    .hero__fiche {
+        width: 75px;
+        bottom: 51px;
+        left: 16px;
+        padding: 5px;
+        font-size: 4px;
+    }
+
+    .hero__bande {
+        height: 18px;
+        padding: 4px 8px;
+        font-size: 4px;
+    }
+
+    .hero__bande--verte {
+        width: 105%;
+        left: -16px;
+        bottom: 37px;
+    }
+
+    .hero__bande--violette {
+        width: 105%;
+        right: -20px;
+        bottom: 20px;
+    }
+
+
+    .bande-rose {
+        min-height: 15px;
+        font-size: 4px;
+    }
+
+    .a-propos,
+    .mise-en-avant,
+    .carte-projet,
+    .contact {
+        padding: 48px 16px;
+    }
+
+    .a-propos__titre {
+        font-size: 12vw;
+    }
+
+    .a-propos__texte,
+    .carte-projet__description {
+        font-size: 5px;
+        line-height: 1.8;
+    }
+
+    .media,
+    .carte-projet__image-principale {
+        min-height: 230px;
+    }
+
+    .mise-en-avant__titre {
+        font-size: 12vw;
+    }
+
+    .bande-verte {
+        padding: 10px 16px;
+        font-size: 9px;
+    }
+
+    .carte-projet__titre {
+        font-size: 12vw;
+    }
+
+    .carte-projet__galerie {
+        gap: 5px;
+    }
+
+    .carte-projet__galerie .media {
+        min-height: 105px;
+    }
+
+    .carte-projet__legende {
+        font-size: 4px;
+    }
+
+    .carte-projet__tags {
+        grid-template-columns: repeat(2, max-content);
+        gap: 4px;
+    }
+
+    .carte-projet__tags span {
+        font-size: 4px;
+        padding: 3px 5px;
+    }
+
+    .bouton {
+        font-size: 4px;
+        padding: 5px 7px;
+    }
+
+    .contact {
+        min-height: 330px;
+    }
+
+    .contact__titre {
+        font-size: 23vw;
+    }
+
+    .contact__boite {
+        margin-top: 30px;
+        padding: 12px;
+        font-size: 5px;
+    }
+
+    .footer {
+        padding: 10px 12px;
+        font-size: 4px;
+    }
+}
