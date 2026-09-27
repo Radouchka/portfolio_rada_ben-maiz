@@ -1,206 +1,463 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Portfolio — Rada Ben Maiz</title>
 
-    <!-- Polices Google utilisées dans la maquette -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 
-    <!-- Fichiers CSS -->
+    <!-- ===============================
+         POLICES GOOGLE
+    ================================ -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- ===============================
+         CSS
+    ================================ -->
+
     <link rel="stylesheet" href="css/variables.css">
+
     <link rel="stylesheet" href="css/base.css">
+
     <link rel="stylesheet" href="css/layout.css">
+
     <link rel="stylesheet" href="css/composants/navigation.css">
+
     <link rel="stylesheet" href="css/composants/carte-projet.css">
+
+    <link rel="stylesheet" href="css/composants/modale.css">
+
 </head>
+
 
 <body>
 
-    <!-- =====================================================
+
+    <!-- =================================================
          HEADER
-    ====================================================== -->
+    ================================================== -->
+
     <header class="navigation">
 
-        <a class="navigation__logo" href="#accueil">
-            <img src="assets/logo.png" alt="Logo Rada Ben Maiz">
+
+        <a
+            class="navigation__logo"
+            href="#accueil"
+        >
+
+            <img
+                src="assets/logo.png"
+                alt="Logo Rada Ben Maiz"
+            >
+
         </a>
 
-        <nav class="navigation__liens" aria-label="Navigation principale">
-            <a href="#apropos">À PROPOS</a>
-            <a href="#projets">PROJETS</a>
-            <a href="#contact">CONTACT</a>
+
+        <nav
+            class="navigation__liens"
+            aria-label="Navigation principale"
+        >
+
+            <a href="#apropos">
+                À PROPOS
+            </a>
+
+            <a href="#projets">
+                PROJETS
+            </a>
+
+            <a href="#contact">
+                CONTACT
+            </a>
+
         </nav>
 
-        <p class="navigation__info">RBM / 2026</p>
+
+        <p class="navigation__info">
+            RBM / 2026
+        </p>
+
 
     </header>
 
 
+
     <main>
+
 
         <!-- =================================================
              HERO
         ================================================== -->
-        <section id="accueil" class="hero">
 
-            <p class="hero__label">PORTFOLIO DE RADA BEN MAIZ</p>
+        <section
+            id="accueil"
+            class="hero"
+        >
 
-            <h1 class="hero__titre">PORTFOLIO</h1>
+            <p class="hero__label">
+                PORTFOLIO DE RADA BEN MAIZ
+            </p>
 
-            <h2 class="hero__nom">RADA BEN MAIZ</h2>
+
+            <h1 class="hero__titre">
+                PORTFOLIO
+            </h1>
+
+
+            <h2 class="hero__nom">
+                RADA BEN MAIZ
+            </h2>
+
 
             <div class="hero__fiche">
-                <span>DESIGN</span>
-                <span>MULTIMÉDIA</span>
-                <span>2026</span>
+
+                <span>
+                    DESIGN
+                </span>
+
+                <span>
+                    MULTIMÉDIA
+                </span>
+
+                <span>
+                    2026
+                </span>
+
             </div>
 
-            <div class="hero__bande hero__bande--verte">
+
+            <div
+                class="hero__bande hero__bande--verte"
+            >
                 DESIGN VISUEL — WEB DESIGN — GAME DESIGN
             </div>
 
-            <div class="hero__bande hero__bande--violette">
+
+            <div
+                class="hero__bande hero__bande--violette"
+            >
                 CRÉATIONS NUMÉRIQUES — PROJETS SÉLECTIONNÉS
             </div>
+
 
         </section>
 
 
+
+        <!-- Bande rose -->
+
         <div class="bande-rose">
-            DESIGN GRAPHIQUE ✦ WEB DESIGN ✦ GAME DESIGN ✦ DIRECTION ARTISTIQUE
+
+            DESIGN GRAPHIQUE ✦
+            WEB DESIGN ✦
+            GAME DESIGN ✦
+            DIRECTION ARTISTIQUE
+
         </div>
+
 
 
         <!-- =================================================
              À PROPOS
         ================================================== -->
-        <section id="apropos" class="a-propos">
+
+        <section
+            id="apropos"
+            class="a-propos"
+        >
 
             <div class="a-propos__contenu">
 
+
                 <div>
-                    <p class="section-label">01 / À PROPOS</p>
 
-                    <h2 class="a-propos__titre">
-                        JE FABRIQUE<br>
-                        DES <span>UNIVERS</span><br>
-                        <span>VISUELS</span> QUI NE<br>
-                        TIENNENT PAS<br>
-                        EN PLACE.
-                    </h2>
-                </div>
-
-                <div class="a-propos__texte">
-                    <p>
-                        Je suis Rada Ben Maiz, une créatrice multimédia
-                        intéressée par le design, l'art numérique et le jeu vidéo.
+                    <p class="section-label">
+                        01 / À PROPOS
                     </p>
 
-                    <a class="bouton bouton--rose" href="#projets">
-                        VOIR MES PROJETS
-                    </a>
+
+                    <h2 class="a-propos__titre">
+
+                        JE FABRIQUE<br>
+
+                        DES <span>UNIVERS</span><br>
+
+                        <span>VISUELS</span> QUI NE<br>
+
+                        TIENNENT PAS<br>
+
+                        EN PLACE.
+
+                    </h2>
+
                 </div>
+
+
+
+                <div class="a-propos__texte">
+
+                    <p>
+
+                        Je suis Rada Ben Maiz,
+                        une créatrice multimédia
+                        intéressée par le design,
+                        l'art numérique et le jeu vidéo.
+
+                    </p>
+
+
+                    <a
+                        class="bouton bouton--rose"
+                        href="#projets"
+                    >
+
+                        VOIR MES PROJETS
+
+                    </a>
+
+                </div>
+
 
             </div>
 
         </section>
+
 
 
         <!-- =================================================
              PROJET MIS DE L'AVANT
         ================================================== -->
+
         <section class="mise-en-avant">
 
-            <p class="section-label">PROJET MIS DE L'AVANT</p>
+            <p class="section-label">
+                PROJET MIS DE L'AVANT
+            </p>
+
 
             <div class="mise-en-avant__grille">
 
-                <div class="media">
-                    IMAGE DU PROJET
-                </div>
+
+                <img
+                    class="mise-en-avant__image"
+                    src="assets/images/lost-main.svg"
+                    alt="Aperçu du projet Lost and Found"
+                >
+
 
                 <div>
-                    <p class="projet-info">PHOTO / VISUEL / MULTIMÉDIA</p>
+
+                    <p class="projet-info">
+                        PHOTO / VISUEL / MULTIMÉDIA
+                    </p>
+
 
                     <h2 class="mise-en-avant__titre">
                         LOST &amp; FOUND
                     </h2>
 
+
                     <p>
-                        Une courte description du projet peut être placée ici.
+
+                        Une courte description du projet
+                        peut être placée ici.
+
                     </p>
 
-                    <a class="bouton bouton--vert" href="#projets">
+
+                    <a
+                        class="bouton bouton--vert"
+                        href="#projets"
+                    >
+
                         VOIR LE PROJET
+
                     </a>
+
                 </div>
+
 
             </div>
 
         </section>
 
 
+
+        <!-- =================================================
+             BANDE VERTE
+        ================================================== -->
+
         <div class="bande-verte">
-            DEUX PROJETS, DEUX UNIVERS, BEAUCOUP TROP D'IDÉES.
+
+            DEUX PROJETS,
+            DEUX UNIVERS,
+            BEAUCOUP TROP D'IDÉES.
+
         </div>
+
 
 
         <!-- =================================================
              PROJETS
-             Les cartes sont générées par JS depuis projets.json.
+             
+             Les projets seront automatiquement créés
+             avec JavaScript à partir de projets.json.
         ================================================== -->
-        <section id="projets" class="liste-projets">
-            <!-- Les cartes seront ajoutées ici -->
+
+        <section
+            id="projets"
+            class="liste-projets"
+        >
         </section>
+
 
 
         <!-- =================================================
              CONTACT
         ================================================== -->
-        <section id="contact" class="contact">
 
-            <p class="section-label section-label--noir">07 / CONTACT</p>
+        <section
+            id="contact"
+            class="contact"
+        >
+
+
+            <p
+                class="section-label section-label--noir"
+            >
+                07 / CONTACT
+            </p>
+
 
             <h2 class="contact__titre">
+
                 CONTACT<br>
+
                 <span>DIRECT</span>
+
             </h2>
+
 
             <div class="contact__boite">
 
-                <p>Une idée ? Un projet ?</p>
+
+                <p>
+                    Une idée ? Un projet ?
+                </p>
+
 
                 <a href="mailto:email@example.com">
                     EMAIL@EXEMPLE.COM
                 </a>
 
+
                 <a href="#">
                     INSTAGRAM
                 </a>
+
 
                 <a href="#">
                     LINKEDIN
                 </a>
 
+
             </div>
 
+
         </section>
+
 
     </main>
 
 
+
+    <!-- =================================================
+         FOOTER
+    ================================================== -->
+
     <footer class="footer">
+
         RADA BEN MAIZ — PORTFOLIO 2026
+
     </footer>
 
 
-    <!-- JavaScript -->
-    <script type="module" src="js/main.js"></script>
+
+    <!-- =================================================
+         MODALE / ZOOM
+         
+         Cette fenêtre est cachée au départ.
+         JavaScript l'affiche lorsqu'on clique sur la loupe.
+    ================================================== -->
+
+    <div
+        id="modale"
+        class="modale"
+        aria-hidden="true"
+    >
+
+
+        <button
+            class="modale__fermer"
+            type="button"
+            aria-label="Fermer"
+        >
+
+            &times;
+
+        </button>
+
+
+        <img
+            id="modale-image"
+            class="modale__image"
+            src=""
+            alt=""
+        >
+
+
+        <p
+            id="modale-legende"
+            class="modale__legende"
+        ></p>
+
+
+    </div>
+
+
+
+    <!-- =================================================
+         JAVASCRIPT
+    ================================================== -->
+
+    <script
+        type="module"
+        src="js/main.js"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/animejs/dist/bundles/anime.umd.min.js"></script>
+
 
 </body>
+
 </html>

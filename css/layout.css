@@ -2,9 +2,10 @@
    MISE EN PAGE GÉNÉRALE
 ====================================================== */
 
-/* -------------------------
+
+/* =====================================================
    HERO
--------------------------- */
+====================================================== */
 
 .hero {
     min-height: 570px;
@@ -22,20 +23,33 @@
         );
 }
 
+
+/* -------------------------
+   PETITE ÉTIQUETTE
+-------------------------- */
+
 .hero__label {
     color: var(--vert);
+
     font-size: 8px;
     font-weight: bold;
     letter-spacing: 1px;
 }
+
+
+/* -------------------------
+   GRAND TITRE
+-------------------------- */
 
 .hero__titre {
     width: fit-content;
     margin-top: 110px;
 
     color: var(--blanc);
+
     font-family: var(--police-titre);
     font-size: clamp(80px, 14vw, 180px);
+
     line-height: .75;
     letter-spacing: -5px;
 
@@ -44,14 +58,26 @@
     text-shadow: 6px 5px 0 var(--rose);
 }
 
+
+/* -------------------------
+   NOM
+-------------------------- */
+
 .hero__nom {
     margin: 30px 0 0 20px;
 
     color: var(--vert);
+
     font-family: var(--police-titre);
     font-size: clamp(25px, 4vw, 55px);
+
     line-height: .8;
 }
+
+
+/* -------------------------
+   PETITE FICHE
+-------------------------- */
 
 .hero__fiche {
     width: 110px;
@@ -77,6 +103,11 @@
     color: var(--rose);
 }
 
+
+/* -------------------------
+   BANDEAUX DANS LE HERO
+-------------------------- */
+
 .hero__bande {
     height: 27px;
     padding: 5px 15px;
@@ -90,10 +121,37 @@
     font-weight: bold;
 
     white-space: nowrap;
+
+    /* Important pour cacher le texte
+       quand il est en dehors du bandeau */
+    overflow: hidden;
 }
+
+
+/* -------------------------
+   TEXTE ANIMÉ
+-------------------------- */
+
+.texte-defilant {
+    display: block;
+
+    width: max-content;
+
+    white-space: nowrap;
+
+    /* Aide le navigateur à préparer
+       l'animation Anime.js */
+    will-change: transform, opacity;
+}
+
+
+/* -------------------------
+   BANDE VERTE DU HERO
+-------------------------- */
 
 .hero__bande--verte {
     width: 70%;
+
     left: -4vw;
     bottom: 55px;
 
@@ -103,8 +161,14 @@
     transform: rotate(-2deg);
 }
 
+
+/* -------------------------
+   BANDE VIOLETTE DU HERO
+-------------------------- */
+
 .hero__bande--violette {
     width: 70%;
+
     right: -5vw;
     bottom: 29px;
 
@@ -115,8 +179,13 @@
 }
 
 
-/* -------------------------
+/* =====================================================
    BANDEAUX
+====================================================== */
+
+
+/* -------------------------
+   BANDE ROSE
 -------------------------- */
 
 .bande-rose {
@@ -137,33 +206,53 @@
     white-space: nowrap;
 }
 
+
+/* -------------------------
+   BANDE VERTE
+-------------------------- */
+
 .bande-verte {
     padding: 18px 8vw;
+
+    overflow: hidden;
 
     background: var(--vert);
     color: var(--noir);
 
     font-family: var(--police-titre);
     font-size: clamp(15px, 2vw, 25px);
+
     line-height: .9;
+
+    white-space: nowrap;
+}
+
+
+/* =====================================================
+   À PROPOS
+====================================================== */
+
+.a-propos {
+    padding: 90px 8vw;
+
+    background: var(--noir);
+}
+
+
+.a-propos__contenu {
+    display: grid;
+
+    grid-template-columns: 1.4fr .7fr;
+
+    gap: 70px;
+
+    align-items: end;
 }
 
 
 /* -------------------------
-   À PROPOS
+   LABEL DES SECTIONS
 -------------------------- */
-
-.a-propos {
-    padding: 90px 8vw;
-    background: var(--noir);
-}
-
-.a-propos__contenu {
-    display: grid;
-    grid-template-columns: 1.4fr .7fr;
-    gap: 70px;
-    align-items: end;
-}
 
 .section-label {
     margin-bottom: 20px;
@@ -175,15 +264,28 @@
     letter-spacing: 1px;
 }
 
+
+/* -------------------------
+   TITRE
+-------------------------- */
+
 .a-propos__titre {
     font-family: var(--police-titre);
+
     font-size: clamp(42px, 6vw, 85px);
+
     line-height: .88;
 }
+
 
 .a-propos__titre span {
     color: var(--vert);
 }
+
+
+/* -------------------------
+   TEXTE
+-------------------------- */
 
 .a-propos__texte {
     max-width: 400px;
@@ -193,21 +295,31 @@
 }
 
 
-/* -------------------------
+/* =====================================================
    MISE EN AVANT
--------------------------- */
+====================================================== */
 
 .mise-en-avant {
     padding: 80px 8vw;
+
     background: var(--violet);
 }
 
+
 .mise-en-avant__grille {
     display: grid;
+
     grid-template-columns: 1.2fr .8fr;
+
     gap: 50px;
+
     align-items: center;
 }
+
+
+/* -------------------------
+   MEDIA
+-------------------------- */
 
 .media {
     min-height: 430px;
@@ -230,28 +342,43 @@
     letter-spacing: 1px;
 }
 
+
+/* -------------------------
+   INFORMATIONS PROJET
+-------------------------- */
+
 .projet-info {
     color: var(--rose);
+
     font-size: 7px;
     font-weight: bold;
 }
+
+
+/* -------------------------
+   TITRE PROJET
+-------------------------- */
 
 .mise-en-avant__titre {
     margin: 10px 0 20px;
 
     color: var(--vert);
+
     font-family: var(--police-titre);
+
     font-size: clamp(55px, 7vw, 90px);
+
     line-height: .8;
 }
 
 
-/* -------------------------
+/* =====================================================
    BOUTONS
--------------------------- */
+====================================================== */
 
 .bouton {
     display: inline-block;
+
     margin-top: 22px;
 
     padding: 8px 12px;
@@ -263,18 +390,20 @@
     letter-spacing: 1px;
 }
 
+
 .bouton--vert {
     color: var(--vert);
 }
+
 
 .bouton--rose {
     color: var(--rose);
 }
 
 
-/* -------------------------
+/* =====================================================
    CONTACT
--------------------------- */
+====================================================== */
 
 .contact {
     padding: 80px 8vw;
@@ -283,31 +412,52 @@
     color: var(--noir);
 }
 
+
+/* -------------------------
+   LABEL
+-------------------------- */
+
 .section-label--noir {
     color: var(--noir);
 }
 
+
+/* -------------------------
+   GRAND TITRE
+-------------------------- */
+
 .contact__titre {
     font-family: var(--police-titre);
+
     font-size: clamp(80px, 13vw, 165px);
+
     line-height: .7;
 
     transform: rotate(-3deg);
 }
 
+
 .contact__titre span {
     color: var(--blanc);
 }
 
+
+/* -------------------------
+   BOÎTE CONTACT
+-------------------------- */
+
 .contact__boite {
     width: min(550px, 100%);
+
     margin-top: 45px;
+
     padding: 20px;
 
     display: grid;
     gap: 10px;
 
     background: var(--noir);
+
     border: 1px solid var(--noir);
 
     color: var(--blanc);
@@ -315,22 +465,25 @@
     font-size: 8px;
 }
 
+
 .contact__boite a {
     color: var(--vert);
 }
 
 
-/* -------------------------
+/* =====================================================
    FOOTER
--------------------------- */
+====================================================== */
 
 .footer {
     padding: 20px 8vw;
 
     background: var(--noir);
+
     border-top: 1px solid var(--vert);
 
     color: var(--gris);
+
     font-size: 6px;
 }
 
@@ -341,6 +494,10 @@
 
 @media (max-width: 800px) {
 
+    /* -------------------------
+       NAVIGATION
+    -------------------------- */
+
     .navigation {
         grid-template-columns: 1fr auto;
     }
@@ -349,14 +506,25 @@
         display: none;
     }
 
+
+    /* -------------------------
+       GRILLES
+    -------------------------- */
+
     .a-propos__contenu,
     .mise-en-avant__grille {
         grid-template-columns: 1fr;
     }
 
+
     .a-propos {
         gap: 40px;
     }
+
+
+    /* -------------------------
+       MEDIA
+    -------------------------- */
 
     .media {
         min-height: 350px;
@@ -364,79 +532,144 @@
 }
 
 
+/* =====================================================
+   MOBILE
+====================================================== */
+
 @media (max-width: 600px) {
 
     body {
         font-size: 9px;
     }
 
+
+    /* -------------------------
+       NAVIGATION
+    -------------------------- */
+
     .navigation {
         min-height: 40px;
+
         padding: 5px 12px;
     }
+
 
     .navigation__logo img {
         width: 28px;
         height: 25px;
     }
 
+
     .navigation__info {
         font-size: 5px;
     }
 
 
+    /* =================================================
+       HERO MOBILE
+    ================================================= */
+
     .hero {
         min-height: 360px;
+
         padding: 28px 16px 20px;
     }
+
 
     .hero__label {
         font-size: 5px;
     }
 
+
     .hero__titre {
         margin-top: 80px;
+
         font-size: 20vw;
+
         letter-spacing: -2px;
     }
+
 
     .hero__nom {
         margin-top: 17px;
         margin-left: 8px;
+
         font-size: 9vw;
     }
 
+
+    /* -------------------------
+       FICHE
+    -------------------------- */
+
     .hero__fiche {
         width: 75px;
+
         bottom: 51px;
         left: 16px;
+
         padding: 5px;
+
         font-size: 4px;
     }
+
+
+    /* -------------------------
+       BANDEAUX HERO
+    -------------------------- */
 
     .hero__bande {
         height: 18px;
+
         padding: 4px 8px;
+
         font-size: 4px;
+
+        overflow: hidden;
     }
+
 
     .hero__bande--verte {
         width: 105%;
+
         left: -16px;
         bottom: 37px;
     }
 
+
     .hero__bande--violette {
         width: 105%;
+
         right: -20px;
         bottom: 20px;
     }
 
 
+    /* =================================================
+       BANDEAUX MOBILE
+    ================================================= */
+
     .bande-rose {
         min-height: 15px;
+
         font-size: 4px;
+
+        overflow: hidden;
     }
+
+
+    .bande-verte {
+        padding: 10px 16px;
+
+        font-size: 9px;
+
+        overflow: hidden;
+    }
+
+
+    /* =================================================
+       SECTIONS
+    ================================================= */
 
     .a-propos,
     .mise-en-avant,
@@ -445,77 +678,122 @@
         padding: 48px 16px;
     }
 
+
+    /* -------------------------
+       À PROPOS
+    -------------------------- */
+
     .a-propos__titre {
         font-size: 12vw;
     }
 
+
     .a-propos__texte,
     .carte-projet__description {
         font-size: 5px;
+
         line-height: 1.8;
     }
+
+
+    /* =================================================
+       MEDIA / IMAGES
+    ================================================= */
 
     .media,
     .carte-projet__image-principale {
         min-height: 230px;
     }
 
+
+    /* =================================================
+       MISE EN AVANT
+    ================================================= */
+
     .mise-en-avant__titre {
         font-size: 12vw;
     }
 
-    .bande-verte {
-        padding: 10px 16px;
-        font-size: 9px;
-    }
+
+    /* =================================================
+       PROJETS
+    ================================================= */
 
     .carte-projet__titre {
         font-size: 12vw;
     }
 
+
     .carte-projet__galerie {
         gap: 5px;
     }
+
 
     .carte-projet__galerie .media {
         min-height: 105px;
     }
 
+
     .carte-projet__legende {
         font-size: 4px;
     }
 
+
     .carte-projet__tags {
         grid-template-columns: repeat(2, max-content);
+
         gap: 4px;
     }
 
+
     .carte-projet__tags span {
         font-size: 4px;
+
         padding: 3px 5px;
     }
 
+
+    /* =================================================
+       BOUTONS
+    ================================================= */
+
     .bouton {
         font-size: 4px;
+
         padding: 5px 7px;
     }
+
+
+    /* =================================================
+       CONTACT
+    ================================================= */
 
     .contact {
         min-height: 330px;
     }
 
+
     .contact__titre {
         font-size: 23vw;
     }
 
+
     .contact__boite {
         margin-top: 30px;
+
         padding: 12px;
+
         font-size: 5px;
     }
 
+
+    /* =================================================
+       FOOTER
+    ================================================= */
+
     .footer {
         padding: 10px 12px;
+
         font-size: 4px;
     }
 }

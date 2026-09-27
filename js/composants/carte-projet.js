@@ -2,73 +2,300 @@
    CARTE-PROJET.JS
 ====================================================== */
 
+
 /*
-    Cette fonction prend un projet du JSON
-    et construit le HTML de sa carte.
+    Cette fonction reçoit un projet
+    provenant du fichier projets.json.
+
+    Elle crée ensuite tout le HTML
+    nécessaire à son affichage.
 */
+
 
 export function creerCarteProjet(projet) {
 
-    const classeFond =
-        projet.couleur === "rose"
+
+    /* =================================================
+       COULEUR DU FOND
+    ================================================== */
+
+
+    /*
+        Certains projets ont un fond violet.
+        Les autres ont un fond noir.
+    */
+
+    const fond =
+
+        projet.couleurFond === "violet"
+
             ? "carte-projet--violette"
-            : "carte-projet--sombre";
 
-    const classeCouleur =
-        projet.couleur === "rose"
-            ? "carte-projet__legende--rose"
-            : "carte-projet__legende--verte";
+            : "";
 
-    const tags = projet.tags
-        .map((tag) => `<span>${tag}</span>`)
-        .join("");
 
-    const images = projet.images
-        .map((image) => `
-            <div class="media">
-                <img src="${image}" alt="${projet.titre}">
-            </div>
-        `)
-        .join("");
+
+    /* =================================================
+       IMAGES
+    ================================================== */
+
+
+    /*
+        On transforme le tableau d'images
+        en texte JSON pour pouvoir le mettre
+        dans l'attribut data-images.
+    */
+
+    const imagesJSON =
+
+        JSON.stringify(
+            projet.images
+        )
+
+        .replace(
+            /"/g,
+            "&quot;"
+        );
+
+
+
+    /* =================================================
+       CARTE
+    ================================================== */
+
 
     return `
-        <article class="carte-projet ${classeFond}">
+
+        <article
+
+            class="
+                carte-projet
+                ${fond}
+            "
+
+            style="
+                --couleur-projet:
+                ${projet.couleurBordure};
+            "
+
+        >
+
+
+            <!-- Numéro du projet -->
 
             <p class="carte-projet__label">
-                ${projet.numero} / PROJET
+
+                ${projet.numero}
+                / PROJET
+
             </p>
+
+
+
+            <!-- Titre -->
 
             <h2 class="carte-projet__titre">
+
                 ${projet.titre}
+
             </h2>
 
-            <div class="media carte-projet__image-principale">
-                <img src="${projet.imagePrincipale}" alt="${projet.titre}">
+
+
+            <!-- =================================================
+                 CAROUSEL
+            ================================================== -->
+
+
+            <div
+
+                class="carte-projet__carousel"
+
+                data-images="${imagesJSON}"
+
+            >
+
+
+                <!-- Image actuelle -->
+
+                <div class="carte-projet__slide">
+
+
+                    <img
+
+                        src="${projet.images[0]}"
+
+                        alt="${projet.titre}"
+
+                    >
+
+
+                </div>
+
+
+
+                <!-- -----------------------------
+                     PRÉCÉDENT
+                ------------------------------ -->
+
+
+                <button
+
+                    type="button"
+
+                    class="
+                        carousel__fleche
+                        carousel__fleche--precedente
+                    "
+
+                    aria-label="Image précédente"
+
+                >
+
+                    ‹
+
+                </button>
+
+
+
+                <!-- -----------------------------
+                     SUIVANT
+                ------------------------------ -->
+
+
+                <button
+
+                    type="button"
+
+                    class="
+                        carousel__fleche
+                        carousel__fleche--suivante
+                    "
+
+                    aria-label="Image suivante"
+
+                >
+
+                    ›
+
+                </button>
+
+
+
+                <!-- -----------------------------
+                     ZOOM
+                ------------------------------ -->
+
+
+                <button
+
+                    type="button"
+
+                    class="carousel__zoom"
+
+                    aria-label="Agrandir l'image"
+
+                    title="Agrandir l'image"
+
+                >
+
+                    <span
+                        class="loupe-icone"
+                        aria-hidden="true"
+                    ></span>
+
+                </button>
+
+
+
+                <!-- -----------------------------
+                     COMPTEUR
+                ------------------------------ -->
+
+
+                <span class="carousel__compteur">
+
+                    1 /
+                    ${projet.images.length}
+
+                </span>
+
+
             </div>
 
-            <div class="carte-projet__galerie">
-                ${images}
-            </div>
 
-            <p class="carte-projet__legende ${classeCouleur}">
+
+            <!-- =================================================
+                 LÉGENDE
+            ================================================== -->
+
+
+            <p class="carte-projet__legende">
+
                 ${projet.legende}
+
             </p>
+
+
+
+            <!-- =================================================
+                 DESCRIPTION
+            ================================================== -->
+
 
             <p class="carte-projet__description">
+
                 ${projet.description}
+
             </p>
 
+
+
+            <!-- =================================================
+                 TAGS
+            ================================================== -->
+
+
             <div class="carte-projet__tags">
-                ${tags}
+
+
+                ${
+
+                    projet.tags
+
+                        .map(
+                            (tag) =>
+                                `<span>${tag}</span>`
+                        )
+
+                        .join("")
+
+                }
+
+
             </div>
 
+
+
+            <!-- =================================================
+                 BOUTON
+            ================================================== -->
+
+
             <a
-                class="bouton ${projet.couleur === "rose" ? "bouton--rose" : "bouton--vert"}"
+
+                class="bouton"
+
                 href="${projet.lien}"
+
             >
+
                 VOIR LE PROJET
+
             </a>
 
+
         </article>
+
     `;
 }

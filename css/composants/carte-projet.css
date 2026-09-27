@@ -1,107 +1,616 @@
 /* =====================================================
-   CARTE DE PROJET
+   CARTE DE PROJET + CAROUSEL
+====================================================== */
+
+
+/* =====================================================
+   CARTE
 ====================================================== */
 
 .carte-projet {
-    padding: 75px 8vw;
-}
 
-.carte-projet--sombre {
+    /*
+        Cette variable change selon le projet.
+        Elle contrôle les bordures, la loupe,
+        les flèches et les autres petits éléments.
+    */
+
+    --couleur-projet: var(--vert);
+
+
+    padding: 75px 8vw;
+
     background: var(--noir);
 }
 
+
 .carte-projet--violette {
+
     background: var(--violet);
+
 }
 
+
+
+/* =====================================================
+   TITRE DU PROJET
+====================================================== */
+
 .carte-projet__label {
+
     margin-bottom: 10px;
 
     color: var(--blanc);
 
     font-size: 7px;
+
     font-weight: bold;
+
     letter-spacing: 1px;
+
 }
+
 
 .carte-projet__titre {
+
     margin-bottom: 25px;
 
+    color: var(--couleur-projet);
+
     font-family: var(--police-titre);
-    font-size: clamp(48px, 7vw, 85px);
+
+    font-size:
+        clamp(
+            48px,
+            7vw,
+            85px
+        );
+
     line-height: .8;
+
 }
 
-.carte-projet--sombre .carte-projet__titre {
-    color: var(--vert);
+
+
+/* =====================================================
+   CAROUSEL
+====================================================== */
+
+/*
+    Il n'y a maintenant qu'une seule grande case.
+
+    Toutes les images du projet passent dans cette case
+    grâce au JavaScript.
+*/
+
+.carte-projet__carousel {
+
+    width: 100%;
+
+    aspect-ratio: 16 / 9;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background: #120512;
+
+    border:
+        2px solid
+        var(--couleur-projet);
+
 }
 
-.carte-projet--violette .carte-projet__titre {
-    color: var(--rose);
+
+
+/* Image actuellement affichée */
+
+.carte-projet__slide {
+
+    width: 100%;
+
+    height: 100%;
+
 }
 
-.carte-projet__image-principale {
-    min-height: 470px;
+
+.carte-projet__slide img {
+
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
 }
 
-.carte-projet__galerie {
-    margin-top: 10px;
+
+
+/* =====================================================
+   FLÈCHES
+====================================================== */
+
+.carousel__fleche {
+
+    width: 38px;
+
+    height: 38px;
+
+    position: absolute;
+
+    top: 50%;
+
+    transform:
+        translateY(-50%);
 
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+
+    place-items: center;
+
+    border:
+        1px solid
+        var(--couleur-projet);
+
+    background:
+        rgba(
+            0,
+            0,
+            0,
+            .75
+        );
+
+    color:
+        var(--couleur-projet);
+
+    font-size: 20px;
+
+    cursor: pointer;
+
 }
 
-.carte-projet__galerie .media {
-    min-height: 200px;
+
+.carousel__fleche:hover {
+
+    background:
+        var(--couleur-projet);
+
+    color:
+        var(--noir);
+
 }
+
+
+.carousel__fleche--precedente {
+
+    left: 12px;
+
+}
+
+
+.carousel__fleche--suivante {
+
+    right: 12px;
+
+}
+
+
+
+/* =====================================================
+   COMPTEUR
+====================================================== */
+
+.carousel__compteur {
+
+    padding:
+        5px 8px;
+
+    position: absolute;
+
+    right: 12px;
+
+    bottom: 12px;
+
+    background:
+        rgba(
+            0,
+            0,
+            0,
+            .8
+        );
+
+    border:
+        1px solid
+        var(--couleur-projet);
+
+    color:
+        var(--couleur-projet);
+
+    font-size: 7px;
+
+    font-weight: bold;
+
+}
+
+
+
+/* =====================================================
+   LOUPe / BOUTON ZOOM
+====================================================== */
+
+.carousel__zoom {
+
+    width: 38px;
+
+    height: 38px;
+
+    position: absolute;
+
+    left: 12px;
+
+    bottom: 12px;
+
+    display: grid;
+
+    place-items: center;
+
+    border:
+        1px solid
+        var(--couleur-projet);
+
+    background:
+        rgba(
+            0,
+            0,
+            0,
+            .8
+        );
+
+    cursor: pointer;
+
+}
+
+
+/*
+    La loupe est créée avec du CSS.
+    Aucun fichier d'icône n'est nécessaire.
+*/
+
+.loupe-icone {
+
+    width: 14px;
+
+    height: 14px;
+
+    position: relative;
+
+    border:
+        2px solid
+        var(--couleur-projet);
+
+    border-radius: 50%;
+
+}
+
+
+.loupe-icone::after {
+
+    content: "";
+
+    width: 7px;
+
+    height: 2px;
+
+    position: absolute;
+
+    right: -6px;
+
+    bottom: -3px;
+
+    background:
+        var(--couleur-projet);
+
+    transform:
+        rotate(45deg);
+
+}
+
+
+
+/* =====================================================
+   TEXTE SOUS LE CAROUSEL
+====================================================== */
 
 .carte-projet__legende {
-    padding: 6px 10px;
+
+    padding:
+        6px 10px;
+
+    background:
+        var(--couleur-projet);
+
+    color:
+        var(--noir);
 
     font-size: 6px;
+
     font-weight: bold;
+
     letter-spacing: 1px;
+
 }
 
-.carte-projet__legende--verte {
-    background: var(--vert);
-    color: var(--noir);
+
+.carte-projet--violette
+.carte-projet__legende {
+
+    color:
+        var(--blanc);
+
 }
 
-.carte-projet__legende--rose {
-    background: var(--rose);
-    color: var(--blanc);
-}
+
+
+/* =====================================================
+   DESCRIPTION
+====================================================== */
 
 .carte-projet__description {
+
     max-width: 600px;
+
     margin-top: 25px;
 
     font-size: 8px;
+
     line-height: 1.8;
+
 }
 
+
+
+/* =====================================================
+   TAGS
+====================================================== */
+
 .carte-projet__tags {
+
     margin-top: 20px;
 
     display: grid;
-    grid-template-columns: repeat(3, max-content);
+
+    grid-template-columns:
+        repeat(
+            3,
+            max-content
+        );
+
     gap: 6px;
+
+    color:
+        var(--couleur-projet);
+
 }
+
 
 .carte-projet__tags span {
-    padding: 4px 6px;
 
-    border: 1px solid currentColor;
+    padding:
+        4px 6px;
+
+    border:
+        1px solid
+        currentColor;
 
     font-size: 6px;
+
 }
 
-.carte-projet--sombre .carte-projet__tags {
-    color: var(--vert);
+
+.carte-projet .bouton {
+
+    color:
+        var(--couleur-projet);
+
 }
 
-.carte-projet--violette .carte-projet__tags {
-    color: var(--rose);
+
+
+/* =====================================================
+   MOBILE
+====================================================== */
+
+@media (max-width: 600px) {
+
+
+    .carte-projet {
+
+        padding:
+            48px
+            16px
+            45px;
+
+    }
+
+
+    .carte-projet__titre {
+
+        font-size:
+            12vw;
+
+    }
+
+
+    /*
+        Sur mobile, le cadre devient légèrement
+        plus vertical mais reste une seule grande case.
+    */
+
+    .carte-projet__carousel {
+
+        aspect-ratio:
+            4 / 3;
+
+        border-width:
+            1px;
+
+    }
+
+
+    /* Flèches */
+
+    .carousel__fleche {
+
+        width:
+            30px;
+
+        height:
+            30px;
+
+        font-size:
+            16px;
+
+    }
+
+
+    .carousel__fleche--precedente {
+
+        left:
+            7px;
+
+    }
+
+
+    .carousel__fleche--suivante {
+
+        right:
+            7px;
+
+    }
+
+
+    /* Compteur */
+
+    .carousel__compteur {
+
+        right:
+            7px;
+
+        bottom:
+            7px;
+
+        font-size:
+            5px;
+
+    }
+
+
+    /* Loupe */
+
+    .carousel__zoom {
+
+        left:
+            7px;
+
+        bottom:
+            7px;
+
+        width:
+            30px;
+
+        height:
+            30px;
+
+    }
+
+
+    .loupe-icone {
+
+        width:
+            11px;
+
+        height:
+            11px;
+
+    }
+
+
+    .loupe-icone::after {
+
+        width:
+            6px;
+
+        right:
+            -5px;
+
+        bottom:
+            -3px;
+
+    }
+
+
+    /* Légende */
+
+    .carte-projet__legende {
+
+        padding:
+            4px
+            6px;
+
+        font-size:
+            4px;
+
+    }
+
+
+    /* Description */
+
+    .carte-projet__description {
+
+        font-size:
+            5px;
+
+    }
+
+
+    /* Tags */
+
+    .carte-projet__tags {
+
+        grid-template-columns:
+            repeat(
+                2,
+                max-content
+            );
+
+        gap:
+            4px;
+
+    }
+
+
+    .carte-projet__tags span {
+
+        font-size:
+            4px;
+
+        padding:
+            3px
+            5px;
+
+    }
+
+
+    .carte-projet .bouton {
+
+        font-size:
+            4px;
+
+        padding:
+            5px
+            7px;
+
+    }
+
 }

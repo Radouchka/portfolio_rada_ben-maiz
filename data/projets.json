@@ -2,81 +2,159 @@
     {
         "numero": "02",
         "titre": "KIOSK / 01",
-        "couleur": "vert",
-        "imagePrincipale": "assets/images/kiosk-main.jpg",
-        "images": [
-            "assets/images/kiosk-01.jpg",
-            "assets/images/kiosk-02.jpg",
-            "assets/images/kiosk-03.jpg",
-            "assets/images/kiosk-04.jpg"
-        ],
+
+        "couleurFond": "noir",
+
+        "couleurBordure": "#16ff4b",
+
+        "slug": "kiosk",
+
         "legende": "KIOSK / UNIVERS VISUEL ET INTERFACE",
-        "description": "Description du projet et de la démarche.",
-        "tags": ["3D", "WEB", "DESIGN"],
-        "lien": "#"
+
+        "description": "Projet axé sur la création d'un univers visuel, la composition d'images et la présentation d'une interface numérique.",
+
+        "tags": [
+            "3D",
+            "WEB",
+            "DESIGN"
+        ],
+
+        "lien": "#",
+
+        "images": [
+            "assets/images/kiosk-1.svg",
+            "assets/images/kiosk-2.svg",
+            "assets/images/kiosk-3.svg",
+            "assets/images/kiosk-4.svg",
+            "assets/images/kiosk-5.svg"
+        ]
     },
+
+
     {
         "numero": "03",
         "titre": "NIGHT SHIFT",
-        "couleur": "rose",
-        "imagePrincipale": "assets/images/night-main.jpg",
-        "images": [
-            "assets/images/night-01.jpg",
-            "assets/images/night-02.jpg",
-            "assets/images/night-03.jpg",
-            "assets/images/night-04.jpg"
-        ],
+
+        "couleurFond": "violet",
+
+        "couleurBordure": "#ff009d",
+
+        "slug": "night",
+
         "legende": "NIGHT SHIFT / ENVIRONNEMENT NOCTURNE",
-        "description": "Description du projet et de la démarche.",
-        "tags": ["3D", "GAME", "UNITY"],
-        "lien": "#"
+
+        "description": "Projet autour de l'image, de l'ambiance et de la création d'un environnement visuel nocturne.",
+
+        "tags": [
+            "3D",
+            "GAME",
+            "UNITY"
+        ],
+
+        "lien": "#",
+
+        "images": [
+            "assets/images/night-1.svg",
+            "assets/images/night-2.svg",
+            "assets/images/night-3.svg",
+            "assets/images/night-4.svg",
+            "assets/images/night-5.svg"
+        ]
     },
+
+
     {
         "numero": "04",
         "titre": "SAVE POINT",
-        "couleur": "vert",
-        "imagePrincipale": "assets/images/save-main.jpg",
-        "images": [
-            "assets/images/save-01.jpg",
-            "assets/images/save-02.jpg",
-            "assets/images/save-03.jpg",
-            "assets/images/save-04.jpg"
-        ],
+
+        "couleurFond": "noir",
+
+        "couleurBordure": "#00e5ff",
+
+        "slug": "save",
+
         "legende": "SAVE POINT / INTERFACE ET EXPÉRIENCE",
-        "description": "Description du projet et de la démarche.",
-        "tags": ["GAME", "UI", "DESIGN"],
-        "lien": "#"
+
+        "description": "Projet inspiré du jeu vidéo avec une attention portée à l'interface, aux images et à la relation entre l'utilisateur et l'écran.",
+
+        "tags": [
+            "GAME",
+            "UI",
+            "DESIGN"
+        ],
+
+        "lien": "#",
+
+        "images": [
+            "assets/images/save-1.svg",
+            "assets/images/save-2.svg",
+            "assets/images/save-3.svg",
+            "assets/images/save-4.svg",
+            "assets/images/save-5.svg"
+        ]
     },
+
+
     {
         "numero": "05",
         "titre": "GHOST FM",
-        "couleur": "rose",
-        "imagePrincipale": "assets/images/ghost-main.jpg",
-        "images": [
-            "assets/images/ghost-01.jpg",
-            "assets/images/ghost-02.jpg",
-            "assets/images/ghost-03.jpg",
-            "assets/images/ghost-04.jpg"
-        ],
+
+        "couleurFond": "violet",
+
+        "couleurBordure": "#b94cff",
+
+        "slug": "ghost",
+
         "legende": "GHOST FM / SON ET IDENTITÉ VISUELLE",
-        "description": "Description du projet et de la démarche.",
-        "tags": ["AUDIO", "MAX", "MULTIMÉDIA"],
-        "lien": "#"
+
+        "description": "Projet multimédia qui mélange une identité graphique, une ambiance sonore et une expérience numérique.",
+
+        "tags": [
+            "AUDIO",
+            "MAX",
+            "MULTIMÉDIA"
+        ],
+
+        "lien": "#",
+
+        "images": [
+            "assets/images/ghost-1.svg",
+            "assets/images/ghost-2.svg",
+            "assets/images/ghost-3.svg",
+            "assets/images/ghost-4.svg",
+            "assets/images/ghost-5.svg"
+        ]
     },
+
+
     {
         "numero": "06",
         "titre": "LOST & FOUND",
-        "couleur": "vert",
-        "imagePrincipale": "assets/images/lost-main.jpg",
-        "images": [
-            "assets/images/lost-01.jpg",
-            "assets/images/lost-02.jpg",
-            "assets/images/lost-03.jpg",
-            "assets/images/lost-04.jpg"
-        ],
+
+        "couleurFond": "noir",
+
+        "couleurBordure": "#ffb300",
+
+        "slug": "lost",
+
         "legende": "LOST & FOUND / EXPLORATION VISUELLE",
-        "description": "Description du projet et de la démarche.",
-        "tags": ["PHOTO", "VISUEL", "MÉDIA"],
-        "lien": "#"
+
+        "description": "Série visuelle centrée sur l'image, la lumière et la recherche d'une atmosphère personnelle.",
+
+        "tags": [
+            "PHOTO",
+            "VISUEL",
+            "MÉDIA"
+        ],
+
+        "lien": "#",
+
+        "images": [
+            "assets/images/lost-1.svg",
+            "assets/images/lost-2.svg",
+            "assets/images/lost-3.svg",
+            "assets/images/lost-4.svg",
+            "assets/images/lost-5.svg"
+        ]
     }
 ]
