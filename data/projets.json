@@ -1,7 +1,7 @@
 [
     {
         "numero": "02",
-        "titre": "KIOSK / 01",
+        "titre": "OPERATION LARA",
 
         "couleurFond": "noir",
 
@@ -9,7 +9,7 @@
 
         "slug": "kiosk",
 
-        "legende": "KIOSK / UNIVERS VISUEL ET INTERFACE",
+        "legende": "PROJET WEB",
 
         "description": "Projet axé sur la création d'un univers visuel, la composition d'images et la présentation d'une interface numérique.",
 

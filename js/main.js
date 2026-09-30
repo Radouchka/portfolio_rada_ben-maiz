@@ -39,15 +39,23 @@ chargerProjets()
         projets = donnees;
 
 
-        projets.forEach((projet) => {
+        projets.forEach((projet, index) => {
 
-            conteneurProjets.insertAdjacentHTML(
-                "beforeend",
-                creerCarteProjet(projet)
-            );
+    conteneurProjets.insertAdjacentHTML(
+        "beforeend",
+        creerCarteProjet(projet)
+    );
 
-        });
+});
 
+
+/* Donne un ID au deuxième projet */
+const cartesProjets =
+    document.querySelectorAll(".carte-projet");
+
+if (cartesProjets[1]) {
+    cartesProjets[1].id = "deuxieme-projet";
+}
 
         initialiserCarousels();
 

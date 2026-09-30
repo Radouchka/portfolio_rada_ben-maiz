@@ -277,23 +277,6 @@ export function creerCarteProjet(projet) {
 
 
 
-            <!-- =================================================
-                 BOUTON
-            ================================================== -->
-
-
-            <a
-
-                class="bouton"
-
-                href="${projet.lien}"
-
-            >
-
-                VOIR LE PROJET
-
-            </a>
-
 
         </article>
 

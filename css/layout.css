@@ -231,6 +231,7 @@
     padding: 90px 8vw;
 
     background: var(--noir);
+    border-bottom: 5px dashed var(--rose);
 }
 
 
@@ -297,7 +298,7 @@
 .mise-en-avant {
     padding: 80px 8vw;
 
-    background: var(--violet);
+    background-image: url("/Assets/images/bg_2.png");
 }
 
 
