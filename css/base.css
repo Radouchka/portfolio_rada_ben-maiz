@@ -27,7 +27,7 @@ a {
 
 img {
     display: block;
-    max-width: 60%;
+    max-width: 100%;
 }
 
 section {
@@ -38,4 +38,8 @@ h1,
 h2,
 p {
     margin: 0;
+}
+
+.mise-en-avant__image {
+    max-width: 60%;
 }

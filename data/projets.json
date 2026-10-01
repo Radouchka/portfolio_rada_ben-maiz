@@ -11,22 +11,36 @@
 
         "legende": "PROJET WEB",
 
-        "description": "Projet axé sur la création d'un univers visuel, la composition d'images et la présentation d'une interface numérique.",
+        "description": "Operation Lara est un projet réalisé en 2025 dans le cadre d’un cours collégial. J’ai conçu et développé un site web inspiré des interfaces de type loadout de jeux vidéo, afin d’explorer et de mettre en pratique différentes technologies, notamment JavaScript, Anime.js et Mo.js.J’ai également utilisé des outils d’intelligence artificielle et la rédaction de prompts pour créer et ajuster certains éléments visuels du projet. L’ensemble du projet a été réalisé par moi-même, incluant la conception du site, son intégration et la création du personnage.L’esthétique du projet s’inspire des interfaces de statistiques de personnages militaires dans les jeux d’action, avec une direction visuelle axée sur les équipements, les caractéristiques et l’univers tactique.",
 
         "tags": [
             "3D",
             "WEB",
             "DESIGN"
         ],
+         "applications": [
+        {
+            "nom": "Photoshop",
+            "icone": "./assets/icones/photoshop.png"
+        },
+        {
+            "nom": "Blender",
+            "icone": "./assets/icones/blender.png"
+        },
+        {
+            "nom": "VS Code",
+            "icone": "./assets/icones/vscode.png"
+        }
+         ],
 
         "lien": "#",
 
         "images": [
-            "assets/images/kiosk-1.svg",
-            "assets/images/kiosk-2.svg",
-            "assets/images/kiosk-3.svg",
-            "assets/images/kiosk-4.svg",
-            "assets/images/kiosk-5.svg"
+            "/Assets/images/loadout.gif",
+            "Assets/images/lara.png",
+            "Assets/images/radar.png",
+            "Assets/images/voice.png",
+            "Assets/images/weapon.png"
         ]
     },
 
@@ -49,6 +63,21 @@
             "3D",
             "GAME",
             "UNITY"
+        ],
+
+         "applications": [
+        {
+            "nom": "Photoshop",
+            "icone": "./assets/icones/photoshop.png"
+        },
+        {
+            "nom": "Blender",
+            "icone": "./assets/icones/blender.png"
+        },
+        {
+            "nom": "VS Code",
+            "icone": "./assets/icones/vscode.png"
+        }
         ],
 
         "lien": "#",
@@ -81,6 +110,20 @@
             "GAME",
             "UI",
             "DESIGN"
+        ], 
+         "applications": [
+        {
+            "nom": "Photoshop",
+            "icone": "./assets/icones/photoshop.png"
+        },
+        {
+            "nom": "Blender",
+            "icone": "./assets/icones/blender.png"
+        },
+        {
+            "nom": "VS Code",
+            "icone": "./assets/icones/vscode.png"
+        }
         ],
 
         "lien": "#",
@@ -114,6 +157,20 @@
             "MAX",
             "MULTIMÉDIA"
         ],
+         "applications": [
+        {
+            "nom": "Photoshop",
+            "icone": "./assets/icones/photoshop.png"
+        },
+        {
+            "nom": "Blender",
+            "icone": "./assets/icones/blender.png"
+        },
+        {
+            "nom": "VS Code",
+            "icone": "./assets/icones/vscode.png"
+        }
+        ],
 
         "lien": "#",
 
@@ -145,6 +202,20 @@
             "PHOTO",
             "VISUEL",
             "MÉDIA"
+        ], 
+         "applications": [
+        {
+            "nom": "Photoshop",
+            "icone": "./assets/icones/photoshop.png"
+        },
+        {
+            "nom": "Blender",
+            "icone": "./assets/icones/blender.png"
+        },
+        {
+            "nom": "VS Code",
+            "icone": "./assets/icones/vscode.png"
+        }
         ],
 
         "lien": "#",
