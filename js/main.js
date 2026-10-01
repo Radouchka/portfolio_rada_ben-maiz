@@ -39,11 +39,35 @@ chargerProjets()
         projets = donnees;
 
 
-        
+        projets.forEach((projet) => {
+
+            conteneurProjets.insertAdjacentHTML(
+                "beforeend",
+                creerCarteProjet(projet)
+            );
+
+        });
+
+
+        /* Le deuxième projet reçoit cet ID */
+        const cartesProjets =
+            document.querySelectorAll(
+                ".carte-projet"
+            );
+
+
+        if (cartesProjets[1]) {
+
+            cartesProjets[1].id =
+                "deuxieme-projet";
+
+        }
+
 
         initialiserCarousels();
 
     })
+
     .catch((erreur) => {
 
         console.error(erreur);

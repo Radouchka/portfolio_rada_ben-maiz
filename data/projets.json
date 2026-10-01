@@ -18,20 +18,6 @@
             "WEB",
             "DESIGN"
         ],
-         "applications": [
-        {
-            "nom": "Photoshop",
-            "icone": "./assets/icones/photoshop.png"
-        },
-        {
-            "nom": "Blender",
-            "icone": "./assets/icones/blender.png"
-        },
-        {
-            "nom": "VS Code",
-            "icone": "./assets/icones/vscode.png"
-        }
-         ],
 
         "lien": "#",
 
@@ -65,21 +51,6 @@
             "UNITY"
         ],
 
-         "applications": [
-        {
-            "nom": "Photoshop",
-            "icone": "./assets/icones/photoshop.png"
-        },
-        {
-            "nom": "Blender",
-            "icone": "./assets/icones/blender.png"
-        },
-        {
-            "nom": "VS Code",
-            "icone": "./assets/icones/vscode.png"
-        }
-        ],
-
         "lien": "#",
 
         "images": [
@@ -110,20 +81,6 @@
             "GAME",
             "UI",
             "DESIGN"
-        ], 
-         "applications": [
-        {
-            "nom": "Photoshop",
-            "icone": "./assets/icones/photoshop.png"
-        },
-        {
-            "nom": "Blender",
-            "icone": "./assets/icones/blender.png"
-        },
-        {
-            "nom": "VS Code",
-            "icone": "./assets/icones/vscode.png"
-        }
         ],
 
         "lien": "#",
@@ -157,20 +114,6 @@
             "MAX",
             "MULTIMÉDIA"
         ],
-         "applications": [
-        {
-            "nom": "Photoshop",
-            "icone": "./assets/icones/photoshop.png"
-        },
-        {
-            "nom": "Blender",
-            "icone": "./assets/icones/blender.png"
-        },
-        {
-            "nom": "VS Code",
-            "icone": "./assets/icones/vscode.png"
-        }
-        ],
 
         "lien": "#",
 
@@ -202,20 +145,6 @@
             "PHOTO",
             "VISUEL",
             "MÉDIA"
-        ], 
-         "applications": [
-        {
-            "nom": "Photoshop",
-            "icone": "./assets/icones/photoshop.png"
-        },
-        {
-            "nom": "Blender",
-            "icone": "./assets/icones/blender.png"
-        },
-        {
-            "nom": "VS Code",
-            "icone": "./assets/icones/vscode.png"
-        }
         ],
 
         "lien": "#",
