@@ -5,7 +5,10 @@
 
     <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <title>Portfolio — Rada Ben Maiz</title>
 
@@ -35,17 +38,35 @@
          CSS
     ================================ -->
 
-    <link rel="stylesheet" href="css/variables.css">
+    <link
+        rel="stylesheet"
+        href="css/variables.css"
+    >
 
-    <link rel="stylesheet" href="css/base.css">
+    <link
+        rel="stylesheet"
+        href="css/base.css"
+    >
 
-    <link rel="stylesheet" href="css/layout.css">
+    <link
+        rel="stylesheet"
+        href="css/layout.css"
+    >
 
-    <link rel="stylesheet" href="css/composants/navigation.css">
+    <link
+        rel="stylesheet"
+        href="css/composants/navigation.css"
+    >
 
-    <link rel="stylesheet" href="css/composants/carte-projet.css">
+    <link
+        rel="stylesheet"
+        href="css/composants/carte-projet.css"
+    >
 
-    <link rel="stylesheet" href="css/composants/modale.css">
+    <link
+        rel="stylesheet"
+        href="css/composants/modale.css"
+    >
 
 </head>
 
@@ -54,11 +75,13 @@
 
 
     <!-- =================================================
-         HEADER
+         HEADER / NAVIGATION
     ================================================== -->
 
     <header class="navigation">
 
+
+        <!-- LOGO -->
 
         <a
             class="navigation__logo"
@@ -72,6 +95,32 @@
 
         </a>
 
+
+
+        <!-- =================================================
+             BOUTON BURGER
+             
+             Visible seulement sur mobile.
+        ================================================== -->
+
+        <button
+            class="navigation__burger"
+            type="button"
+            aria-label="Ouvrir le menu"
+            aria-expanded="false"
+        >
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+
+
+        <!-- =================================================
+             NAVIGATION
+        ================================================== -->
 
         <nav
             class="navigation__liens"
@@ -93,8 +142,6 @@
         </nav>
 
 
-
-
     </header>
 
 
@@ -112,7 +159,6 @@
         >
 
 
-
             <h1 class="hero__titre">
                 PORTFOLIO
             </h1>
@@ -124,12 +170,12 @@
 
 
 
-
             <div
                 class="hero__bande hero__bande--verte"
             >
                 DESIGN VISUEL — WEB DESIGN — GAME DESIGN
             </div>
+
 
 
             <div
@@ -143,7 +189,9 @@
 
 
 
-        <!-- Bande rose -->
+        <!-- =================================================
+             BANDE ROSE
+        ================================================== -->
 
         <div class="bande-rose">
 
@@ -154,8 +202,35 @@
 
         </div>
 
+         <!-- =================================================
+                  DEMO REEL 
+        ================================================== -->
+        <section class="demo-reel">
 
+     <p class="demo-reel__titre">
+        DEMO REEL
+     </p>
 
+        <div class="demo-reel__contenu">
+
+        <div class="demo-reel__video">
+    <iframe
+        src="https://www.youtube.com/embed/ZzkTJ2Nf-9I"
+        title="Demo Reel"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+    </iframe>
+</div>
+        <div class="demo-reel_description">
+            <p>Voici un court métrage présentant une sélection de mes projets ainsi que leur processus de création. J’y présente brièvement mes réalisations et les différentes étapes de leur développement.</p>
+        </div>
+
+    
+
+        </div>
+
+         </section>
         <!-- =================================================
              À PROPOS
         ================================================== -->
@@ -183,8 +258,7 @@
 
                         <span>VIDEO</span> ILLUSTRATION<br>
 
-                        ANIMATION<br>
-
+                        ANIMATION
 
                     </h2>
 
@@ -196,7 +270,7 @@
 
                     <p>
 
-                        Salut ! Je m’appelle Rada, je suis étudiante en multimédia et voici mon portfolio. Les arts numériques ainsi que les jeux vidéo sont mes passions. J’exprime librement ma créativité à travers chacun de mes projets.
+                        Salut ! Je m’appelle Rada, je suis une finissante d'études en multimédia et voici mon portfolio. Les arts numériques ainsi que les jeux vidéo sont mes passions. J’exprime librement ma créativité à travers chacun de mes projets.
 
                     </p>
 
@@ -236,7 +310,7 @@
                 <img
                     class="mise-en-avant__image"
                     src="/Assets/images/cover_bd.png"
-                    alt="Aperçu du projet Lost and Found"
+                    alt="Aperçu du projet"
                 >
 
 
@@ -248,8 +322,11 @@
 
 
                     <h2 class="mise-en-avant__titre">
-                       <p> Chapitre: 1<br>
-                         Victorina </p>
+
+                        <p>
+                            Victorina
+                        </p>
+
                     </h2>
 
 
@@ -262,7 +339,7 @@
 
                     <a
                         class="bouton bouton--vert"
-                        href="#deuxieme-projet"
+                        href="#deuxieme_projet"
                     >
 
                         VOIR LE PROJET
@@ -284,7 +361,11 @@
 
         <div class="bande-verte">
 
-          《 Operatrice Lara 》《 Chapitre 1 : Victorina 》《 Le Dernier Délai 》《Zombiction》《 Trancho 》
+            《 Operatrice Lara 》
+            《 Chapitre 1 : Victorina 》
+            《 Le Dernier Délai 》
+            《 Zombiction 》
+            《 Trancho 》
 
         </div>
 
@@ -292,9 +373,6 @@
 
         <!-- =================================================
              PROJETS
-             
-             Les projets seront automatiquement créés
-             avec JavaScript à partir de projets.json.
         ================================================== -->
 
         <section
@@ -302,7 +380,7 @@
             class="liste-projets"
         >
         </section>
-        
+
 
 
         <!-- =================================================
@@ -318,7 +396,9 @@
             <p
                 class="section-label section-label--noir"
             >
+
                 07 / CONTACT
+
             </p>
 
 
@@ -335,19 +415,18 @@
 
 
                 <p>
-                    Une idée ? Un projet ?
+                    Je suis toujours disponible pour discuter de nouveaux projets ou opportunités. N’hésitez pas à me contacter par courriel!
                 </p>
 
 
-                <a href="mailto:email@example.com">
-                   rada.benmaiz27@gmail.com
+                <a
+                    href="mailto:email@example.com"
+                >
+
+                    rada.benmaiz27@gmail.com
+
                 </a>
 
-
-
-                <a href="#">
-                    514-980-2392
-                </a>
 
 
             </div>
@@ -374,9 +453,6 @@
 
     <!-- =================================================
          MODALE / ZOOM
-         
-         Cette fenêtre est cachée au départ.
-         JavaScript l'affiche lorsqu'on clique sur la loupe.
     ================================================== -->
 
     <div
@@ -423,8 +499,6 @@
         type="module"
         src="js/main.js"
     ></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/animejs/dist/bundles/anime.umd.min.js"></script>
 
 
 </body>

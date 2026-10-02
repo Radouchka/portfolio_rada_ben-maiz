@@ -14,213 +14,428 @@
     position: relative;
     overflow: hidden;
 
-    background-image: url("/Assets/images/fond_header.png");
+    background-image:
+        url('/Assets/images/fond_header.png');
     background-size: cover;
+    background-position: center;
 }
 
 
-/* -------------------------
-   PETITE ÉTIQUETTE
--------------------------- */
 
-.hero__label {
-    color: var(--vert);
+/* =====================================================
+   TITRE INTERACTIF
+====================================================== */
 
-    font-size: 8px;
-    font-weight: bold;
-    letter-spacing: 1px;
-}
-
-
-/* -------------------------
-   GRAND TITRE
--------------------------- */
-
-.hero__titre {
+.hero__titre-interactif {
     width: fit-content;
+
+    position: relative;
+
     margin-top: 110px;
+}
 
-    color: var(--blanc);
 
-    font-family: var(--police-titre);
-    font-size: clamp(80px, 14vw, 180px);
+.hero__titre-interactif .hero__titre {
+
+    width: fit-content;
+
+    margin-top: 0;
+
+    position: relative;
+
+    z-index: 3;
+
+}
+
+
+
+/* =====================================================
+   COUCHES COLORÉES DU TITRE
+====================================================== */
+
+.hero__titre-couche {
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    z-index: 1;
+
+    width: max-content;
+
+    font-family:
+        var(--police-titre);
+
+    font-size:
+        clamp(
+            80px,
+            14vw,
+            180px
+        );
 
     line-height: .75;
+
     letter-spacing: -5px;
 
-    transform: rotate(-3deg);
+    white-space: nowrap;
 
-    text-shadow: 6px 5px 0 var(--rose);
+    pointer-events: none;
+
 }
 
 
-/* -------------------------
+.hero__titre-couche--rose {
+
+    color: transparent;
+
+    -webkit-text-stroke:
+        10px
+        var(--rose);
+
+    opacity: .65;
+
+}
+
+
+.hero__titre-couche--verte {
+
+    color: transparent;
+
+    -webkit-text-stroke:
+        4px
+        var(--vert);
+
+    opacity: .65;
+
+}
+
+
+
+/* =====================================================
+   GRAND TITRE
+====================================================== */
+
+.hero__titre {
+
+    width: fit-content;
+
+    color:
+        var(--blanc);
+
+    font-family:
+        var(--police-titre);
+
+    font-size:
+        clamp(
+            80px,
+            14vw,
+            180px
+        );
+
+    line-height: .75;
+
+    letter-spacing: -5px;
+
+    transform:
+        rotate(-3deg);
+
+    text-shadow:
+        -1px
+        5px
+        0
+        var(--rose);
+
+}
+
+
+
+/* =====================================================
    NOM
--------------------------- */
+====================================================== */
 
 .hero__nom {
-    margin: 80px 0 0 20px;
 
-    color: var(--vert);
+    margin:
+        30px 0 0 20px;
 
-    font-family: var(--police-titre);
-    font-size: clamp(25px, 4vw, 55px);
+    position: relative;
+
+    z-index: 4;
+
+    color:
+        var(--vert);
+
+    font-family:
+        var(--police-titre);
+
+    font-size:
+        clamp(
+            25px,
+            4vw,
+            55px
+        );
 
     line-height: .8;
+
+    will-change:
+        transform;
+
 }
 
 
-/* -------------------------
-   PETITE FICHE
--------------------------- */
 
-.hero__fiche {
-    width: 110px;
-    padding: 8px;
+/* =====================================================
+   ÉTOILES COLLAGE
+====================================================== */
 
+/*
+    Les étoiles sont très petites pour donner
+    un effet de collage / décoration BD.
+*/
+
+.hero__etoile {
     position: absolute;
-    left: 8vw;
-    bottom: 80px;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
-    background: var(--blanc);
-    color: var(--noir);
-
-    font-size: 5px;
+    z-index: 2;
+    font-size: 25px;
+    line-height: 1;
     font-weight: bold;
-
-    transform: rotate(-3deg);
-}
-
-.hero__fiche span:nth-child(2) {
-    color: var(--rose);
+    pointer-events: none;
+    user-select: none;
+    will-change: transform;
 }
 
 
 /* -------------------------
-   BANDEAUX DANS LE HERO
+   COULEURS
 -------------------------- */
+
+.hero__etoile--rose {
+
+    color:
+        var(--rose);
+
+}
+
+
+.hero__etoile--vert {
+
+    color:
+        var(--vert);
+
+}
+
+
+
+/* -------------------------
+   POSITIONS
+-------------------------- */
+
+.hero__etoile--haut-gauche {
+
+    top: 12%;
+
+    left: 5%;
+
+}
+
+
+.hero__etoile--haut-droite {
+
+    top: 16%;
+
+    right: 7%;
+
+}
+
+
+.hero__etoile--bas-gauche {
+
+    bottom: 18%;
+
+    left: 6%;
+
+}
+
+
+.hero__etoile--bas-droite {
+
+    bottom: 13%;
+
+    right: 8%;
+
+}
+
+
+.hero__etoile--coin-gauche {
+
+    top: 48%;
+
+    left: 2%;
+
+}
+
+
+.hero__etoile--coin-droit {
+
+    top: 42%;
+
+    right: 3%;
+
+}
+
+
+
+/* =====================================================
+   BANDEAUX HERO
+====================================================== */
 
 .hero__bande {
+
     height: 27px;
-    padding: 5px 15px;
+
+    padding:
+        5px 15px;
 
     position: absolute;
 
     display: grid;
+
     align-items: center;
 
     font-size: 7px;
+
     font-weight: bold;
 
     white-space: nowrap;
 
-    /* Important pour cacher le texte
-       quand il est en dehors du bandeau */
     overflow: hidden;
+
 }
 
 
-/* -------------------------
-   TEXTE ANIMÉ
--------------------------- */
+.hero__bande--verte {
+
+    width: 70%;
+
+    left: -4vw;
+
+    bottom: 55px;
+
+    background:
+        var(--vert);
+
+    color:
+        var(--noir);
+
+    transform:
+        rotate(-2deg);
+
+}
+
+
+.hero__bande--violette {
+
+    width: 70%;
+
+    right: -5vw;
+
+    bottom: 29px;
+
+    background:
+        #6922d2;
+
+    color:
+        var(--blanc);
+
+    transform:
+        rotate(2deg);
+
+}
+
+
+
+/* =====================================================
+   TEXTE DÉFILANT
+====================================================== */
 
 .texte-defilant {
+
     display: block;
 
     width: max-content;
 
     white-space: nowrap;
 
-    /* Aide le navigateur à préparer
-       l'animation Anime.js */
-    will-change: transform, opacity;
+    will-change:
+        transform,
+        opacity;
+
 }
 
-
-/* -------------------------
-   BANDE VERTE DU HERO
--------------------------- */
-
-.hero__bande--verte {
-    width: 70%;
-
-    left: -4vw;
-    bottom: 55px;
-
-    background: var(--vert);
-    color: var(--noir);
-
-    transform: rotate(-2deg);
-}
-
-
-/* -------------------------
-   BANDE VIOLETTE DU HERO
--------------------------- */
-
-.hero__bande--violette {
-    width: 70%;
-
-    right: -5vw;
-    bottom: 29px;
-
-    background: #6922d2;
-    color: var(--blanc);
-
-    transform: rotate(2deg);
-}
 
 
 /* =====================================================
    BANDEAUX
 ====================================================== */
 
-
-/* -------------------------
-   BANDE ROSE
--------------------------- */
-
 .bande-rose {
+
     min-height: 24px;
 
     display: grid;
+
     align-items: center;
 
     overflow: hidden;
 
-    background: var(--rose);
-    color: var(--noir);
+    background:
+        var(--rose);
+
+    color:
+        var(--noir);
 
     font-size: 6px;
+
     font-weight: bold;
+
     letter-spacing: 1px;
 
     white-space: nowrap;
+
 }
 
 
-/* -------------------------
-   BANDE VERTE
--------------------------- */
-
 .bande-verte {
-    padding: 18px 8vw;
+
+    padding:
+        18px
+        8vw;
 
     overflow: hidden;
 
-    background: var(--vert);
-    color: var(--noir);
+    background:
+        var(--vert);
 
-    font-family: var(--police-titre);
-    font-size: clamp(15px, 2vw, 25px);
+    color:
+        var(--noir);
+
+    font-family:
+        var(--police-titre);
+
+    font-size:
+        clamp(
+            15px,
+            2vw,
+            25px
+        );
 
     line-height: .9;
 
     white-space: nowrap;
+
 }
+
 
 
 /* =====================================================
@@ -228,67 +443,91 @@
 ====================================================== */
 
 .a-propos {
-    padding: 90px 8vw;
 
-    background: var(--noir);
-    border-bottom: 5px dashed var(--rose);
+    padding:
+        90px
+        8vw;
+
+    background:
+        var(--noir);
+    border-bottom: 3px dashed var(--rose);
 }
 
 
 .a-propos__contenu {
+
     display: grid;
 
-    grid-template-columns: 1.4fr .7fr;
+    grid-template-columns:
+        1.4fr
+        .7fr;
 
-    gap: 70px;
+    gap:
+        70px;
 
     align-items: end;
+
 }
 
-
-/* -------------------------
-   LABEL DES SECTIONS
--------------------------- */
 
 .section-label {
+
     margin-bottom: 20px;
 
-    color: var(--vert);
+    color:
+        var(--vert);
 
-    font-size: 8px;
-    font-weight: bold;
-    letter-spacing: 1px;
+    font-size:
+        8px;
+
+    font-weight:
+        bold;
+
+    letter-spacing:
+        1px;
+
 }
 
 
-/* -------------------------
-   TITRE
--------------------------- */
-
 .a-propos__titre {
-    font-family: var(--police-titre);
 
-    font-size: clamp(42px, 6vw, 85px);
+    font-family:
+        var(--police-titre);
 
-    line-height: .88;
+    font-size:
+        clamp(
+            42px,
+            6vw,
+            85px
+        );
+
+    line-height:
+        .88;
+
 }
 
 
 .a-propos__titre span {
-    color: var(--vert);
+
+    color:
+        var(--vert);
+
 }
 
-
-/* -------------------------
-   TEXTE
--------------------------- */
 
 .a-propos__texte {
-    max-width: 400px;
 
-    font-size: 9px;
-    line-height: 1.8;
+    max-width:
+        400px;
+
+    font-size:
+        9px;
+
+    line-height:
+        1.8;
+
 }
+
 
 
 /* =====================================================
@@ -296,34 +535,49 @@
 ====================================================== */
 
 .mise-en-avant {
-    padding: 80px 8vw;
 
-    background-image: url("/Assets/images/bg_2.png");
+    padding:
+        80px
+        8vw;
+
+    background-image: 
+        url('/Assets/images/bg_2.png');
+
 }
 
 
 .mise-en-avant__grille {
+
     display: grid;
 
-    grid-template-columns: 1.2fr .8fr;
+    grid-template-columns:
+        1.2fr
+        .8fr;
 
-    gap: 50px;
+    gap:
+        50px;
 
-    align-items: center;
+    align-items:
+        center;
+
 }
 
 
-/* -------------------------
-   MEDIA
--------------------------- */
-
 .media {
-    min-height: 430px;
 
-    display: grid;
-    place-items: center;
+    min-height:
+        430px;
 
-    border: 1px solid var(--vert);
+    display:
+        grid;
+
+    place-items:
+        center;
+
+    border:
+        1px
+        solid
+        var(--vert);
 
     background:
         linear-gradient(
@@ -332,40 +586,62 @@
             #10030f
         );
 
-    color: rgba(255, 255, 255, .5);
+    color:
+        rgba(
+            255,
+            255,
+            255,
+            .5
+        );
 
-    font-size: 7px;
-    letter-spacing: 1px;
+    font-size:
+        7px;
+
+    letter-spacing:
+        1px;
+
 }
 
-
-/* -------------------------
-   INFORMATIONS PROJET
--------------------------- */
 
 .projet-info {
-    color: var(--rose);
 
-    font-size: 7px;
-    font-weight: bold;
+    color:
+        var(--rose);
+
+    font-size:
+        7px;
+
+    font-weight:
+        bold;
+
 }
 
-
-/* -------------------------
-   TITRE PROJET
--------------------------- */
 
 .mise-en-avant__titre {
-    margin: 10px 0 20px;
 
-    color: var(--vert);
+    margin:
+        10px
+        0
+        20px;
 
-    font-family: var(--police-titre);
+    color:
+        var(--vert);
 
-    font-size: clamp(55px, 7vw, 90px);
+    font-family:
+        var(--police-titre);
 
-    line-height: .8;
+    font-size:
+        clamp(
+            55px,
+            7vw,
+            90px
+        );
+
+    line-height:
+        .8;
+
 }
+
 
 
 /* =====================================================
@@ -373,28 +649,49 @@
 ====================================================== */
 
 .bouton {
-    display: inline-block;
 
-    margin-top: 22px;
+    display:
+        inline-block;
 
-    padding: 8px 12px;
+    margin-top:
+        22px;
 
-    border: 1px solid currentColor;
+    padding:
+        8px
+        12px;
 
-    font-size: 7px;
-    font-weight: bold;
-    letter-spacing: 1px;
+    border:
+        1px
+        solid
+        currentColor;
+
+    font-size:
+        7px;
+
+    font-weight:
+        bold;
+
+    letter-spacing:
+        1px;
+
 }
 
 
 .bouton--vert {
-    color: var(--vert);
+
+    color:
+        var(--vert);
+
 }
 
 
 .bouton--rose {
-    color: var(--rose);
+
+    color:
+        var(--rose);
+
 }
+
 
 
 /* =====================================================
@@ -402,69 +699,103 @@
 ====================================================== */
 
 .contact {
-    padding: 80px 8vw;
 
-    background: var(--rose);
-    color: var(--noir);
+    padding:
+        80px
+        8vw;
+
+    background:
+        var(--rose);
+
+    color:
+        var(--noir);
+
 }
 
-
-/* -------------------------
-   LABEL
--------------------------- */
 
 .section-label--noir {
-    color: var(--noir);
+
+    color:
+        var(--noir);
+
 }
 
 
-/* -------------------------
-   GRAND TITRE
--------------------------- */
-
 .contact__titre {
-    font-family: var(--police-titre);
 
-    font-size: clamp(80px, 13vw, 165px);
+    font-family:
+        var(--police-titre);
 
-    line-height: .7;
+    font-size:
+        clamp(
+            80px,
+            13vw,
+            165px
+        );
 
-    transform: rotate(-3deg);
+    line-height:
+        .7;
+
+    transform:
+        rotate(-3deg);
+
 }
 
 
 .contact__titre span {
-    color: var(--blanc);
+
+    color:
+        var(--blanc);
+
 }
 
 
-/* -------------------------
-   BOÎTE CONTACT
--------------------------- */
-
 .contact__boite {
-    width: min(550px, 100%);
 
-    margin-top: 45px;
+    width:
+        min(
+            550px,
+            100%
+        );
 
-    padding: 20px;
+    margin-top:
+        45px;
 
-    display: grid;
-    gap: 10px;
+    padding:
+        20px;
 
-    background: var(--noir);
+    display:
+        grid;
 
-    border: 1px solid var(--noir);
+    gap:
+        10px;
 
-    color: var(--blanc);
+    background:
+        var(--noir);
 
-    font-size: 8px;
+    border:
+        1px
+        solid
+        var(--noir);
+
+    color:
+        var(--blanc);
+
+    font-size:
+        8px;
+
 }
 
 
 .contact__boite a {
-    color: var(--vert);
+
+    color:
+        var(--vert);
+    font-size:
+        13px;
+
 }
+
 
 
 /* =====================================================
@@ -472,16 +803,27 @@
 ====================================================== */
 
 .footer {
-    padding: 20px 8vw;
 
-    background: var(--noir);
+    padding:
+        20px
+        8vw;
 
-    border-top: 1px solid var(--vert);
+    background:
+        var(--noir);
 
-    color: var(--gris);
+    border-top:
+        1px
+        solid
+        var(--vert);
 
-    font-size: 6px;
+    color:
+        var(--gris);
+
+    font-size:
+        6px;
+
 }
+
 
 
 /* =====================================================
@@ -490,42 +832,33 @@
 
 @media (max-width: 800px) {
 
-    /* -------------------------
-       NAVIGATION
-    -------------------------- */
-
-    .navigation {
-        grid-template-columns: 1fr auto;
-    }
-
-    .navigation__liens {
-        display: none;
-    }
-
-
-    /* -------------------------
-       GRILLES
-    -------------------------- */
 
     .a-propos__contenu,
     .mise-en-avant__grille {
-        grid-template-columns: 1fr;
+
+        grid-template-columns:
+            1fr;
+
     }
 
 
     .a-propos {
-        gap: 40px;
+
+        gap:
+            40px;
+
     }
 
-
-    /* -------------------------
-       MEDIA
-    -------------------------- */
 
     .media {
-        min-height: 350px;
+
+        min-height:
+            350px;
+
     }
+
 }
+
 
 
 /* =====================================================
@@ -534,133 +867,251 @@
 
 @media (max-width: 600px) {
 
+
     body {
-        font-size: 9px;
+
+        font-size:
+            9px;
+
+    }
+
+
+
+    /* =================================================
+       HERO
+    ================================================= */
+
+    .hero {
+
+        min-height:
+            360px;
+
+        padding:
+            28px
+            16px
+            20px;
+
     }
 
 
     /* -------------------------
-       NAVIGATION
+       TITRE
     -------------------------- */
 
-    .navigation {
-        min-height: 40px;
+    .hero__titre-interactif {
 
-        padding: 5px 12px;
-    }
+        margin-top:
+            80px;
 
-
-    .navigation__logo img {
-        width: 10px;
-        height: 15px;
-    }
-
-
-    .navigation__info {
-        font-size: 5px;
-    }
-
-
-    /* =================================================
-       HERO MOBILE
-    ================================================= */
-
-    .hero {
-        min-height: 360px;
-
-        padding: 28px 16px 20px;
-    }
-
-
-    .hero__label {
-        font-size: 5px;
     }
 
 
     .hero__titre {
-        margin-top: 80px;
 
-        font-size: 15vw;
+        margin-top:
+            0;
 
-        letter-spacing: -2px;
+        font-size:
+            15vw;
+
+        letter-spacing:
+            -2px;
+
     }
 
+
+    .hero__titre-couche {
+
+        font-size:
+            15vw;
+
+        letter-spacing:
+            -2px;
+
+    }
+
+
+    .hero__titre-couche--rose,
+    .hero__titre-couche--verte {
+
+        -webkit-text-stroke:
+            1px
+            currentColor;
+
+    }
+
+
+    /* -------------------------
+       NOM
+    -------------------------- */
 
     .hero__nom {
-        margin-top: 17px;
-        margin-left: 8px;
 
-        font-size: 9vw;
+        margin-top:
+            17px;
+
+        margin-left:
+            8px;
+
+        font-size:
+            9vw;
+
     }
 
 
     /* -------------------------
-       FICHE
+       ÉTOILES
     -------------------------- */
 
-    .hero__fiche {
-        width: 75px;
+    .hero__etoile {
 
-        bottom: 51px;
-        left: 16px;
+        font-size:
+            6px;
 
-        padding: 5px;
-
-        font-size: 4px;
     }
 
 
-    /* -------------------------
+    .hero__etoile--haut-gauche {
+
+        top:
+            14%;
+
+        left:
+            5%;
+
+    }
+
+
+    .hero__etoile--haut-droite {
+
+        top:
+            12%;
+
+        right:
+            6%;
+
+    }
+
+
+    .hero__etoile--bas-gauche {
+
+        bottom:
+            17%;
+
+        left:
+            5%;
+
+    }
+
+
+    .hero__etoile--bas-droite {
+
+        bottom:
+            12%;
+
+        right:
+            7%;
+
+    }
+
+
+    .hero__etoile--coin-gauche {
+
+        top:
+            45%;
+
+        left:
+            2%;
+
+    }
+
+
+    .hero__etoile--coin-droit {
+
+        top:
+            40%;
+
+        right:
+            2%;
+
+    }
+
+
+
+    /* =================================================
        BANDEAUX HERO
-    -------------------------- */
+    ================================================= */
 
     .hero__bande {
-        height: 18px;
 
-        padding: 4px 8px;
+        height:
+            18px;
 
-        font-size: 4px;
+        padding:
+            4px
+            8px;
 
-        overflow: hidden;
+        font-size:
+            4px;
+
     }
 
 
     .hero__bande--verte {
-        width: 105%;
 
-        left: -16px;
-        bottom: 37px;
+        width:
+            105%;
+
+        left:
+            -16px;
+
+        bottom:
+            37px;
+
     }
 
 
     .hero__bande--violette {
-        width: 105%;
 
-        right: -20px;
-        bottom: 20px;
+        width:
+            105%;
+
+        right:
+            -20px;
+
+        bottom:
+            20px;
+
     }
 
 
+
     /* =================================================
-       BANDEAUX MOBILE
+       BANDEAUX
     ================================================= */
 
     .bande-rose {
-        min-height: 15px;
 
-        font-size: 4px;
+        min-height:
+            15px;
 
-        overflow: hidden;
+        font-size:
+            4px;
+
     }
 
 
     .bande-verte {
-        padding: 10px 16px;
 
-        font-size: 9px;
+        padding:
+            10px
+            16px;
 
-        overflow: hidden;
+        font-size:
+            9px;
+
     }
+
 
 
     /* =================================================
@@ -671,43 +1122,48 @@
     .mise-en-avant,
     .carte-projet,
     .contact {
-        padding: 48px 16px;
+
+        padding:
+            48px
+            16px;
+
     }
 
 
-    /* -------------------------
-       À PROPOS
-    -------------------------- */
-
     .a-propos__titre {
-        font-size: 12vw;
+
+        font-size:
+            10vw;
+
     }
 
 
     .a-propos__texte,
     .carte-projet__description {
-        font-size: 5px;
 
-        line-height: 1.8;
+        font-size:
+            12px;
+
+        line-height:
+            1.8;
+
     }
 
-
-    /* =================================================
-       MEDIA / IMAGES
-    ================================================= */
 
     .media,
     .carte-projet__image-principale {
-        min-height: 230px;
+
+        min-height:
+            230px;
+
     }
 
 
-    /* =================================================
-       MISE EN AVANT
-    ================================================= */
-
     .mise-en-avant__titre {
-        font-size: 12vw;
+
+        font-size:
+            12vw;
+
     }
 
 
@@ -716,37 +1172,62 @@
     ================================================= */
 
     .carte-projet__titre {
-        font-size: 12vw;
+
+        font-size:
+            12vw;
+
     }
 
 
     .carte-projet__galerie {
-        gap: 5px;
+
+        gap:
+            5px;
+
     }
 
 
     .carte-projet__galerie .media {
-        min-height: 105px;
+
+        min-height:
+            105px;
+
     }
 
 
     .carte-projet__legende {
-        font-size: 4px;
+
+        font-size:
+            4px;
+
     }
 
 
     .carte-projet__tags {
-        grid-template-columns: repeat(2, max-content);
 
-        gap: 4px;
+        grid-template-columns:
+            repeat(
+                2,
+                max-content
+            );
+
+        gap:
+            4px;
+
     }
 
 
     .carte-projet__tags span {
-        font-size: 4px;
 
-        padding: 3px 5px;
+        font-size:
+            4px;
+
+        padding:
+            3px
+            5px;
+
     }
+
 
 
     /* =================================================
@@ -754,10 +1235,16 @@
     ================================================= */
 
     .bouton {
-        font-size: 4px;
 
-        padding: 5px 7px;
+        font-size:
+            10px;
+
+        padding:
+            5px
+            7px;
+
     }
+
 
 
     /* =================================================
@@ -765,22 +1252,34 @@
     ================================================= */
 
     .contact {
-        min-height: 330px;
+
+        min-height:
+            330px;
+
     }
 
 
     .contact__titre {
-        font-size: 20vw;
+
+        font-size:
+            20vw;
+
     }
 
 
     .contact__boite {
-        margin-top: 30px;
 
-        padding: 12px;
+        margin-top:
+            30px;
 
-        font-size: 5px;
+        padding:
+            12px;
+
+        font-size:
+            5px;
+
     }
+
 
 
     /* =================================================
@@ -788,8 +1287,104 @@
     ================================================= */
 
     .footer {
-        padding: 10px 12px;
 
-        font-size: 4px;
+        padding:
+            10px
+            12px;
+
+        font-size:
+            4px;
+
     }
+
+}
+
+/* =====================================================
+   DEMO REEL
+====================================================== */
+
+.demo-reel {
+    position: relative;
+    padding: 80px 8vw;
+    overflow: hidden;
+
+    background-color: var(--noir);
+
+    background-image:
+        radial-gradient(
+            #cb56a8 1px,
+            transparent 1px
+        );
+
+    background-size: 8px 8px;
+}
+
+
+.demo-reel__titre {
+    position: relative;
+    z-index: 3;
+
+    margin-bottom: 30px;
+
+    color: var(--blanc);
+
+    font-family: var(--police-titre);
+    font-size: clamp(40px, 6vw, 80px);
+    line-height: .8;
+}
+
+.demo-reel_description {
+    color: var(--blanc);
+    font-size: 9px;
+    line-height: 1.8;
+    background-color: var(--noir);
+    padding: 10px;
+    margin-top: 20px;
+    width: fit-content;
+    text-align: left;
+}
+
+.demo-reel__contenu {
+    display: grid;
+    grid-template-columns: 1.3fr .7fr;
+    gap: 40px;
+    align-items: center;
+}
+
+
+/* Vidéo */
+
+.demo-reel__video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+
+    border: 2px solid var(--vert);
+
+    background: var(--noir);
+    overflow: hidden;
+}
+
+
+.demo-reel__video iframe {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: none;
+}
+
+
+/* Mobile */
+
+@media (max-width: 800px) {
+
+    .demo-reel {
+        padding: 48px 16px;
+    }
+
+    .demo-reel__contenu {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+
 }

@@ -21,12 +21,14 @@
     padding: 75px 8vw;
 
     background: var(--noir);
+    border-bottom: 3px var(--rose) dashed;
 }
 
 
 .carte-projet--violette {
 
     background: var(--violet);
+    
 
 }
 
@@ -75,6 +77,7 @@
 /* =====================================================
    CAROUSEL
 ====================================================== */
+
 
 /*
     Il n'y a maintenant qu'une seule grande case.
@@ -236,7 +239,7 @@
 
 
 /* =====================================================
-   LOUPe / BOUTON ZOOM
+   LOUPE / BOUTON ZOOM
 ====================================================== */
 
 .carousel__zoom {
@@ -333,7 +336,7 @@
     color:
         var(--noir);
 
-    font-size: 6px;
+    font-size: 9px;
 
     font-weight: bold;
 
@@ -346,7 +349,7 @@
 .carte-projet__legende {
 
     color:
-        var(--blanc);
+        var(--noir);
 
 }
 
@@ -371,7 +374,7 @@
 
 
 /* =====================================================
-   TAGS + PETITES IMAGES
+   TAGS + LOGOS
 ====================================================== */
 
 .carte-projet__bas {
@@ -423,14 +426,14 @@
         1px solid
         currentColor;
 
-    font-size: 6px;
+    font-size: 10px;
 
 }
 
 
 
 /* =====================================================
-   PETITES CASES D'IMAGES
+   PETITES CASES POUR LES LOGOS
 ====================================================== */
 
 .carte-projet__petites-images {
@@ -447,11 +450,6 @@
 
 }
 
-
-/*
-    Chaque petite case contient
-    une image du projet.
-*/
 
 .carte-projet__petite-image {
 
@@ -479,7 +477,7 @@
 
     display: block;
 
-    object-fit: cover;
+    object-fit: contain;
 
 }
 
@@ -627,7 +625,7 @@
             6px;
 
         font-size:
-            4px;
+            6px;
 
     }
 
@@ -643,7 +641,7 @@
 
 
     /* =================================================
-       TAGS + PETITES IMAGES MOBILE
+       TAGS + LOGOS MOBILE
     ================================================== */
 
     .carte-projet__bas {
@@ -676,7 +674,7 @@
     .carte-projet__tags span {
 
         font-size:
-            4px;
+            15px;
 
         padding:
             3px
@@ -685,7 +683,7 @@
     }
 
 
-    /* Petites images */
+    /* Logos */
 
     .carte-projet__petites-images {
 
@@ -723,4 +721,11 @@
 
     }
 
+}
+
+.carte-projet__youtube {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: none;
 }

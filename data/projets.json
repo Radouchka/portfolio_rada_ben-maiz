@@ -9,14 +9,19 @@
 
         "slug": "kiosk",
 
-        "legende": "PROJET WEB",
+        "legende": " 2025 - PROJET WEB",
 
         "description": "Operation Lara est un projet réalisé en 2025 dans le cadre d’un cours collégial. J’ai conçu et développé un site web inspiré des interfaces de type loadout de jeux vidéo, afin d’explorer et de mettre en pratique différentes technologies, notamment JavaScript, Anime.js et Mo.js.J’ai également utilisé des outils d’intelligence artificielle et la rédaction de prompts pour créer et ajuster certains éléments visuels du projet. L’ensemble du projet a été réalisé par moi-même, incluant la conception du site, son intégration et la création du personnage.L’esthétique du projet s’inspire des interfaces de statistiques de personnages militaires dans les jeux d’action, avec une direction visuelle axée sur les équipements, les caractéristiques et l’univers tactique.",
 
         "tags": [
-            "3D",
+            "JAVASCRIPT",
             "WEB",
             "DESIGN"
+        ],
+
+        "logos": [
+            "/Assets/images/photoshop.jpg",
+            "/Assets/images/vscode.jpg"
         ],
 
         "lien": "#",
@@ -33,7 +38,7 @@
 
     {
         "numero": "03",
-        "titre": "NIGHT SHIFT",
+        "titre": "VICTORINA",
 
         "couleurFond": "violet",
 
@@ -41,31 +46,36 @@
 
         "slug": "night",
 
-        "legende": "NIGHT SHIFT / ENVIRONNEMENT NOCTURNE",
+        "legende": " 2024 - 2026 - PROJET ILLUSTRAION",
 
-        "description": "Projet autour de l'image, de l'ambiance et de la création d'un environnement visuel nocturne.",
+        "description": "Victorina est une bande dessinée réalisée par moi, incluant toutes les illustrations présentées. L’histoire raconte le passé d’une agente spéciale à la recherche de son ennemi. Le chapitre alterne entre des flashbacks et des scènes du présent, permettant de découvrir progressivement son histoire et son passé.",
 
         "tags": [
-            "3D",
-            "GAME",
-            "UNITY"
+            "PHOTOMONTAGE",
+            "DESIGN",
+            "ILLUSTRATION"
+        ],
+
+        "logos": [
+            "/Assets/images/photoshop.jpg",
+            "/Assets/images/illustrator.jpg"
         ],
 
         "lien": "#",
 
         "images": [
-            "assets/images/night-1.svg",
-            "assets/images/night-2.svg",
-            "assets/images/night-3.svg",
-            "assets/images/night-4.svg",
-            "assets/images/night-5.svg"
+            "/Assets/images/cover_bd.png",
+            "/Assets/images/page_1.png",
+            "/Assets/images/page_2.png",
+            "/Assets/images/page_1_full.png",
+            "/Assets/images/page_2_full.png"
         ]
     },
 
 
     {
         "numero": "04",
-        "titre": "SAVE POINT",
+        "titre": "LE DERNIER DÉLAI",
 
         "couleurFond": "noir",
 
@@ -73,31 +83,38 @@
 
         "slug": "save",
 
-        "legende": "SAVE POINT / INTERFACE ET EXPÉRIENCE",
+        "legende": " 2025 - PROJET ANIMATION 2D",
 
-        "description": "Projet inspiré du jeu vidéo avec une attention portée à l'interface, aux images et à la relation entre l'utilisateur et l'écran.",
+        "description": "*Le Dernier délai* est une animation 2D réalisée en équipe avec Iryna Lysenko dans le cadre du cours d’Animation 2D. Le projet porte sur le stress académique lié aux remises de travaux en retard et met en scène deux chats confrontés à cette situation. J’ai participé à la recherche, au storyboard, au montage et à l’assemblage des scènes, en plus de réaliser environ 50 % des animations. Le projet a été réalisé avec After Effects et DaVinci Resolve.",
 
         "tags": [
-            "GAME",
-            "UI",
-            "DESIGN"
+            "ANIMATION 2D",
+            "ILLUSTRATION",
+            "AUDIO"
+        ],
+
+        "logos": [
+            "/Assets/images/illustrator.jpg",
+            "/Assets/images/after_effects.jpg",
+            "/Assets/images/StoryboarderLogo.png",
+            "/Assets/images/DaVinci.jpg"
         ],
 
         "lien": "#",
 
         "images": [
-            "assets/images/save-1.svg",
-            "assets/images/save-2.svg",
-            "assets/images/save-3.svg",
-            "assets/images/save-4.svg",
-            "assets/images/save-5.svg"
+            "https://www.youtube.com/watch?v=ajoapAqd_gY",
+            "/Assets/images/storyboard_1.png",
+            "/Assets/images/computer_cat.png",
+            "/Assets/images/drawing_cat.png",
+           "/Assets/images/homeless_cat.png"
         ]
     },
 
 
     {
         "numero": "05",
-        "titre": "GHOST FM",
+        "titre": "ZOMBICTION",
 
         "couleurFond": "violet",
 
@@ -105,31 +122,34 @@
 
         "slug": "ghost",
 
-        "legende": "GHOST FM / SON ET IDENTITÉ VISUELLE",
+        "legende": " 2025 - JOUER AU JEU : https://radouchka.github.io/Ben_Maiz_Rada_TP3/",
 
-        "description": "Projet multimédia qui mélange une identité graphique, une ambiance sonore et une expérience numérique.",
+        "description": "Zombifiction est un jeu vidéo 2D réalisé individuellement dans le cadre du cours d’Interactivité ludique. Le projet consiste à créer un jeu fonctionnel sur Godot, dans lequel une héroïne doit survivre dans un lieu infesté de zombies et progresser à travers plusieurs niveaux. J’ai réalisé l’ensemble du projet, incluant la conception des niveaux, la programmation, les mécaniques de jeu, les sons, l’UI/UX, les médias et la création des ennemis. Le jeu a été développé avec Godot, Visual Studio Code, Photoshop et REAPER, avec un suivi du développement sur GitHub. Le projet comprend trois niveaux avec une difficulté progressive et des contrôles interactifs.",
 
         "tags": [
-            "AUDIO",
-            "MAX",
+            "JEUX VIDÉO",
+            "INDIE 2D",
             "MULTIMÉDIA"
+        ],
+
+        "logos": [
+            "/Assets/images/photoshop.jpg",
+            "/Assets/images/Godot_icon.png",
+            "/Assets/images/vscode.jpg"
         ],
 
         "lien": "#",
 
         "images": [
-            "assets/images/ghost-1.svg",
-            "assets/images/ghost-2.svg",
-            "assets/images/ghost-3.svg",
-            "assets/images/ghost-4.svg",
-            "assets/images/ghost-5.svg"
+            "https://www.youtube.com/watch?v=4pKXn_WM6-4",
+            "https://www.youtube.com/watch?v=65v5QjeFnzI"
         ]
     },
 
 
     {
         "numero": "06",
-        "titre": "LOST & FOUND",
+        "titre": "TRANCHO",
 
         "couleurFond": "noir",
 
@@ -137,24 +157,30 @@
 
         "slug": "lost",
 
-        "legende": "LOST & FOUND / EXPLORATION VISUELLE",
+        "legende": "2026 - PROJET ANIMATION 3D",
 
-        "description": "Série visuelle centrée sur l'image, la lumière et la recherche d'une atmosphère personnelle.",
+        "description": "Trancho est une animation 3D réalisée individuellement dans le cadre du cours d’Animation 3D, avec un thème inspiré de la Première Guerre mondiale. Le projet raconte l’histoire d’un soldat blessé confronté à des illusions représentant les effets du stress post-traumatique. J’ai réalisé le storyboard, la recherche, la modélisation, l’animation des personnages et des scènes, ainsi que le montage final. Le projet a été réalisé avec Maya, Storyboarder et DaVinci Resolve.",
 
         "tags": [
-            "PHOTO",
-            "VISUEL",
-            "MÉDIA"
+            "MODELISATION 3D",
+            "ANIMATION 3D",
+            "MONTAGE"
+        ],
+
+        "logos": [
+            "/Assets/images/maya.jpg",
+            "/Assets/images/photoshop.jpg",
+            "/Assets/images/DaVinci.jpg"
         ],
 
         "lien": "#",
 
         "images": [
-            "assets/images/lost-1.svg",
-            "assets/images/lost-2.svg",
-            "assets/images/lost-3.svg",
-            "assets/images/lost-4.svg",
-            "assets/images/lost-5.svg"
+            "https://www.youtube.com/watch?v=4i2Fw2on8KE",
+            "/Assets/images/model_chat.jpg",
+            "/Assets/images/objet_1.jpg",
+            "/Assets/images/storyboard_2.png",
+            "/Assets/images/Storyboard_3D.png"
         ]
     }
 ]

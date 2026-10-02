@@ -60,39 +60,39 @@ export function creerCarteProjet(projet) {
 
 
     /* =================================================
-       PETITES CASES D'IMAGES
+       LOGOS
     ================================================== */
 
 
     /*
-        On prend les 4 premières images du projet
-        pour créer les petites cases.
+        Les logos sont séparés des images
+        du carousel.
+
+        Le tableau "logos" vient directement
+        du fichier projets.json.
     */
 
-    const petitesImages =
+    const logosHTML =
 
-        projet.images.slice(0, 4);
-
-
-    const petitesImagesHTML =
-
-        petitesImages
+        (projet.logos || [])
 
             .map(
-                (image, index) => `
+
+                (logo, index) => `
 
                     <div
                         class="carte-projet__petite-image"
                     >
 
                         <img
-                            src="${image}"
-                            alt="${projet.titre} - image ${index + 1}"
+                            src="${logo}"
+                            alt="Logo ${index + 1}"
                         >
 
                     </div>
 
                 `
+
             )
 
             .join("");
@@ -292,7 +292,7 @@ export function creerCarteProjet(projet) {
 
 
             <!-- =================================================
-                 TAGS + PETITES IMAGES
+                 TAGS + LOGOS
             ================================================== -->
 
 
@@ -324,11 +324,11 @@ export function creerCarteProjet(projet) {
 
 
 
-                <!-- PETITES CASES D'IMAGES -->
+                <!-- LOGOS -->
 
                 <div class="carte-projet__petites-images">
 
-                    ${petitesImagesHTML}
+                    ${logosHTML}
 
                 </div>
 
