@@ -15,7 +15,7 @@
     overflow: hidden;
 
     background-image:
-        url('./../Assets/images/fond_header.png');
+        url('../Assets/images/fond_header.png');
     background-size: cover;
     background-position: center;
 }
@@ -541,7 +541,7 @@
         8vw;
 
     background-image: 
-        url('./../Assets/images/bg_2.png');
+        url('../Assets/images/bg_2.png');
 
 }
 
