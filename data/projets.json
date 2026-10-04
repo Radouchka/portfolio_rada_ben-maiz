@@ -20,14 +20,14 @@
         ],
 
         "logos": [
-            "/Assets/images/photoshop.jpg",
-            "/Assets/images/vscode.jpg"
+            "Assets/images/photoshop.jpg",
+            "Assets/images/vscode.jpg"
         ],
 
         "lien": "#",
 
         "images": [
-            "/Assets/images/loadout.gif",
+            "Assets/images/loadout.gif",
             "Assets/images/lara.png",
             "Assets/images/radar.png",
             "Assets/images/voice.png",
@@ -57,18 +57,18 @@
         ],
 
         "logos": [
-            "/Assets/images/photoshop.jpg",
-            "/Assets/images/illustrator.jpg"
+            "Assets/images/photoshop.jpg",
+            "Assets/images/illustrator.jpg"
         ],
 
         "lien": "#",
 
         "images": [
-            "/Assets/images/cover_bd.png",
-            "/Assets/images/page_1.png",
-            "/Assets/images/page_2.png",
-            "/Assets/images/page_1_full.png",
-            "/Assets/images/page_2_full.png"
+            "Assets/images/cover_bd.png",
+            "Assets/images/page_1.png",
+            "Assets/images/page_2.png",
+            "Assets/images/page_1_full.png",
+            "Assets/images/page_2_full.png"
         ]
     },
 
@@ -94,20 +94,20 @@
         ],
 
         "logos": [
-            "/Assets/images/illustrator.jpg",
-            "/Assets/images/after_effects.jpg",
-            "/Assets/images/StoryboarderLogo.png",
-            "/Assets/images/DaVinci.jpg"
+            "Assets/images/illustrator.jpg",
+            "Assets/images/after_effects.jpg",
+            "Assets/images/StoryboarderLogo.png",
+            "Assets/images/DaVinci.jpg"
         ],
 
         "lien": "#",
 
         "images": [
             "https://www.youtube.com/watch?v=ajoapAqd_gY",
-            "/Assets/images/storyboard_1.png",
-            "/Assets/images/computer_cat.png",
-            "/Assets/images/drawing_cat.png",
-           "/Assets/images/homeless_cat.png"
+            "Assets/images/storyboard_1.png",
+            "Assets/images/computer_cat.png",
+            "Assets/images/drawing_cat.png",
+           "Assets/images/homeless_cat.png"
         ]
     },
 
@@ -133,9 +133,9 @@
         ],
 
         "logos": [
-            "/Assets/images/photoshop.jpg",
-            "/Assets/images/Godot_icon.png",
-            "/Assets/images/vscode.jpg"
+            "Assets/images/photoshop.jpg",
+            "Assets/images/Godot_icon.png",
+            "Assets/images/vscode.jpg"
         ],
 
         "lien": "#",
@@ -168,19 +168,19 @@
         ],
 
         "logos": [
-            "/Assets/images/maya.jpg",
-            "/Assets/images/photoshop.jpg",
-            "/Assets/images/DaVinci.jpg"
+            "Assets/images/maya.jpg",
+            "Assets/images/photoshop.jpg",
+            "Assets/images/DaVinci.jpg"
         ],
 
         "lien": "#",
 
         "images": [
             "https://www.youtube.com/watch?v=4i2Fw2on8KE",
-            "/Assets/images/model_chat.jpg",
-            "/Assets/images/objet_1.jpg",
-            "/Assets/images/storyboard_2.png",
-            "/Assets/images/Storyboard_3D.png"
+            "Assets/images/model_chat.jpg",
+            "Assets/images/objet_1.jpg",
+            "Assets/images/storyboard_2.png",
+            "Assets/images/Storyboard_3D.png"
         ]
     }
 ]
