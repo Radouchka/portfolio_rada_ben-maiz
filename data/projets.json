@@ -65,10 +65,10 @@
 
         "images": [
             "Assets/images/cover_bd.png",
-            "Assets/images/page_1.png",
-            "Assets/images/page_2.png",
-            "Assets/images/page_1_full.png",
-            "Assets/images/page_2_full.png"
+            "Assets/images/page_1.webp",
+            "Assets/images/page_2.webp",
+            "Assets/images/page_1_full.webp",
+            "Assets/images/page_2_full.webp"
         ]
     },
 
@@ -105,9 +105,9 @@
         "images": [
             "https://www.youtube.com/watch?v=ajoapAqd_gY",
             "Assets/images/storyboard_1.png",
-            "Assets/images/computer_cat.png",
-            "Assets/images/drawing_cat.png",
-           "Assets/images/homeless_cat.png"
+            "Assets/images/computer_cat.webp",
+            "Assets/images/drawing_cat.webp",
+           "Assets/images/homeless_cat.webp"
         ]
     },
 
