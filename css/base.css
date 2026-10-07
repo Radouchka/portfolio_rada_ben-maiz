@@ -38,8 +38,14 @@ h1,
 h2,
 p {
     margin: 0;
+    font-size: 15px;
 }
 
 .mise-en-avant__image {
     max-width: 60%;
+}
+
+h1,
+h2 {
+    font-size: 40px;
 }
