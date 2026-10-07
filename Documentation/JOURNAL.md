@@ -33,3 +33,45 @@ Le portfolio a été enrichi avec plusieurs systèmes interactifs et multimédia
 
 #### L'utilisation de l'IA
 l’IA a surtout servi d’assistant de développement, elle a proposé la structure du code, écrit et adapté les fonctions JavaScript et les règles CSS, aidé à intégrer Anime.js, expliqué les erreurs rencontrées et fourni des versions complètes des fichiers à copier-coller. Le développement a cependant été fait de manière itérative : les fonctionnalités ont été testées dans le projet, puis corrigées ou simplifiées en fonction du résultat visuel recherché, tandis que les choix de contenu, de design, d’images, de médias et d’organisation du portfolio sont restés ceux du projet.
+
+
+## Liste des demandes de prompt depuis 20-09-2026 à 07-10-2026
+### 1. Planification complète du portfolio
+
+« Génère-moi une planification complète pour recréer mon portfolio web à partir des maquettes desktop et mobile. Prends en compte la structure du site, le responsive design, les technologies utilisées, les animations, la navigation, l’organisation des fichiers, le chargement des projets avec un fichier JSON externe, les tests, le contrôle qualité, GitHub Pages et les étapes de production. »
+
+### 2. Création de l’architecture et du code du portfolio
+
+« À partir de la planification, crée la structure complète du portfolio avec HTML, CSS et JavaScript, en gardant le code simple et compréhensible. Sépare les composants, les données JSON, les styles et les images. »
+
+### 3. Création du système de projets dynamiques et des carousels
+
+« Crée un système où les projets sont chargés depuis projets.json et générés automatiquement en JavaScript. Chaque projet doit avoir un grand carousel rectangulaire avec plusieurs images, des flèches, un compteur, une loupe et une modale de zoom. »
+
+### 4. Animation des bandeaux avec Anime.js
+
+« Utilise Anime.js pour créer un effet de texte défilant comme un affichage numérique de bus : le texte entre par la gauche, avance continuellement à vitesse constante, sort à droite, disparaît progressivement et recommence automatiquement. »
+
+### 5. Navigation responsive
+
+« Fais en sorte que sur desktop le menu reste visible pendant le scroll et que sur mobile la navigation devienne un menu burger qui peut s’ouvrir et se fermer. »
+
+### 6. Interactivité du hero avec la souris
+
+« Ajoute un effet de superposition/parallax au titre PORTFOLIO qui réagit à la souris. Fais aussi bouger le nom RADA BEN MAIZ et ajoute de petites étoiles roses et vertes néon dans les coins avec un effet parallax pour créer un style collage/BD. »
+
+### 7. Animations au scroll
+
+« Ajoute des animations au scroll pour que les différents éléments de la page apparaissent progressivement lorsqu’ils entrent dans l’écran, en utilisant Anime.js et une détection du scroll. »
+
+### 8. Création de la section DEMO REEL
+
+« Ajoute une section DEMO REEL avant la section À PROPOS, avec un grand cadre responsive pour une vidéo, un fond rose avec un motif halftone vert et une mise en page adaptée au mobile. »
+
+### 9. Gestion de plusieurs types de médias dans les carousels
+
+« Fais en sorte qu’une même galerie puisse contenir des images, des GIF et des vidéos YouTube, et que le JavaScript détecte automatiquement le type de média et l’affiche correctement dans le carousel. »
+
+### 10. Séparation des images et des logos
+
+« Les petites cases sous les projets ne doivent pas utiliser les images du carousel. Crée un système séparé pour que chaque projet puisse avoir ses propres petites images/logos, indépendantes des médias du carousel. »
